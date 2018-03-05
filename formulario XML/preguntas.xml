@@ -1,0 +1,12 @@
+<Trivial>
+    <Pregunta>
+        <Categoría> Deportes </Categoría>
+        <Enunciado> ¿Qué jugador marcó el gol que le dió el mundial de 2010 a la selección española de fútbol? </Enunciado>
+        <Respuestas> 
+            <A> Cristiano Ronaldo </A>
+            <B> Lazaro Cuenca </B>
+            <C correcta="True"> Andrés Iniesta </C>
+            <D> David Gelpi </D>
+        </Respuestas>
+    </Pregunta>
+</Trivial>
