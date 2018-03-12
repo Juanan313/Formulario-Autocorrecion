@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wowTrivial>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Enunciado> ¿Dónde se encuentra el Bastión Violeta? </Enunciado>
+        <Respuestas> 
+                <A> Península de Fuego Infernal </A>
+                <B correcta="True"> Dalaran </B>
+                <C> Tol Barad </C>
+                <D> Ventormenta </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Enunciado> El difunto hijo de Varok Colmillosaurio se llamaba... </Enunciado>
+        <Respuestas> 
+                <A> Garrosh </A>
+                <B> Thrall </B>
+                <C correcta="True"> Dranosh </C>
+                <D> Valahk </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Enunciado> ¿Qué arma forjó el Veredicto Cinéreo para enfrentarse al Rey Exánime? </Enunciado>
+        <Respuestas> 
+                <A> La Crematoria </A>
+                <B> La Crematoria Corrupta</B>
+                <C> La mano de Tyr </C>
+                <D correcta="True"> La agonía de las Sombras </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Enunciado> ¿Quién forjó la espada Felo'menon? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Kael'thas caminante del sol </A>
+                <B> Tu personaje(Mago) </B>
+                <C> Anestarian caminante del sol </C>
+                <D> Khadgar </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Enunciado> ¿Qué especie surgió de la relación entre Zaetar y Theradras? </Enunciado>
+        <Respuestas> 
+                <A> Forma de Lobo </A>
+                <B correcta="True"> Forma de la manada</B>
+                <C> Forma de lo salvaje </C>
+                <D> No tiene nada que ver con los Druidas </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Enunciado> ¿Cómo se llamaba la Forma Druídica que dió lugar a la maldición de los huargen? </Enunciado>
+        <Respuestas> 
+                <A> Harípas </A>
+                <B> Troggs</B>
+                <C> Magnatauras </C>
+                <D correcta="True"> Centauros </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> El difunto hijo de Varok Colmillosaurio se llamaba... </Enunciado>
+        <Respuestas> 
+                <A> Garrosh </A>
+                <B> Thrall </B>
+                <C correcta="True"> Dranosh </C>
+                <D> Valahk </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> Un draenei que antaño fue un robusto paladín cayó enfermo tras luchar con la legión ardiente y ahora es un poderoso Chamán </Enunciado>
+        <Respuestas> 
+                <A> Velen </A>
+                <B> Akama </B>
+                <C correcta="True"> Maraad </C>
+                <D> Nobundo </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> ¿Cual fue el primer titán asesinado por Sargeras? </Enunciado>
+        <Respuestas> 
+                <A> Aman'Thul </A>
+                <B> Norgannon </B>
+                <C correcta="True"> Aggramar </C>
+                <D> Eonar </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> ¿Cómo se llamaba el emperador Pandaren que escondió Pandaria con una densa niebla para protegerla del resto del mundo? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Emperador Shaohao </A>
+                <B> Emperador Li Yiang </B>
+                <C> Fue obra de los Augusto Celestiales </C>
+                <D> Emperador Thaurissan </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> ¿A quién persiguió Arthas hasta Rasganorte? </Enunciado>
+        <Respuestas> 
+                <A> Illidan </A>
+                <B> Mal'Ganis </B>
+                <C correcta="True"> Ner'Zhul </C>
+                <D> N'Zoth </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Enunciado> ¿Cuál es el título de Elune? </Enunciado>
+        <Respuestas> 
+                <A> Sacerdotisa de Elune </A>
+                <B correcta="True"> Suma Sacerdotisa de Elune</B>
+                <C> La mujer de Malfurion </C>
+                <D> Lider de los Elfos de la Noche </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Enunciado> ¿Quién fué responsable de que Draenor se convirtiera en Terrallende? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Ner'Zhul </A>
+                <B> Gul'Dan </B>
+                <C> Illidan Tempestira </C>
+                <D> Orgrim Martillo Maldito </D>
+        </Respuestas>
+    </pregunta>
+
+</wowTrivial>

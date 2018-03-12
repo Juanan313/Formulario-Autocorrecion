@@ -1,12 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Trivial>
     <Pregunta>
         <Categoría> Deportes </Categoría>
-        <Enunciado> ¿Qué jugador marcó el gol que le dió el mundial de 2010 a la selección española de fútbol? </Enunciado>
+        <Enunciado id="Deporte1"> ¿Qué jugador marcó el gol que le dió el mundial de 2010 a la selección española de fútbol? </Enunciado>
         <Respuestas> 
             <A> Cristiano Ronaldo </A>
             <B> Lazaro Cuenca </B>
             <C correcta="True"> Andrés Iniesta </C>
             <D> David Gelpi </D>
+        </Respuestas>
+    </Pregunta>
+    <Pregunta>
+        <Categoría> Deportes </Categoría>
+        <Enunciado> ¿En que país fue inventado el voleibol? </Enunciado>
+        <Respuestas> 
+            <A> Italia </A>
+            <B correcta="True"> EEUU </B>
+            <C> Gran Bretaña </C>
+            <D> Iraq </D>
+        </Respuestas>
+    </Pregunta>
+    <Pregunta>
+        <Categoría> Deportes </Categoría>
+        <Enunciado> ¿ Qué deporte se juega en un frotón y con una raqueta parecida a la del Tenis ? </Enunciado>
+        <Respuestas> 
+            <A> Pádel </A>
+            <B> Ping - Pong </B>
+            <C> Báminton  </C>
+            <D correcta="True" > Squash </D>
+        </Respuestas>
+    </Pregunta>
+    <Pregunta>
+        <Categoría> Deportes </Categoría>
+        <Enunciado> ¿Quien gano la champions en 2017? </Enunciado>
+        <Respuestas> 
+            <A> R.Madrid </A>
+            <B>  </B>
+            <C> Báminton  </C>
+            <D correcta="True" > Squash </D>
         </Respuestas>
     </Pregunta>
 </Trivial>
