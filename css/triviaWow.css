@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body{
+    background: #090806 url(http://bnetcmsus-a.akamaihd.net/cms/template_resource/ri/RI8Q9HOWY4U01465961118458.jpg) no-repeat top center;
+    background-attachment: fixed;
+    font-weight: normal;
+    color: #fff;
+    margin: 0px 15px;
+    margin-right: 5%;
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.734);
+    font-family: "Friz Quadrata Std Medium";
+    font-size: 100%;
+
+  }
+  
+  header{
+    position: relative;
+    width: 98%;
+    top:0;
+    left:0;
+    color: #ffffff;
+    padding: 6px;
+    margin: 10px;
+    margin-top:0px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+
+    
+  
+  main{
+    margin: 10px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1{
+    display: block;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.734);
+    font-family: "Friz Quadrata Std Medium";
+    font-weight: normal;
+    font-size:35px;
+    font-style: bold;
+    letter-spacing: 3px ;
+    text-transform: capitalize;;  
+  }
+  
+  h3{
+    background-color: hsla(36, 51%, 77%, 0.644);
+    color: hsl(0, 0%, 100%);
+    margin:0;
+    padding: 6px;
+    padding: 3px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;;
+  }
+
+
+  
+  section{
+    background-color: #6666668e;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative; 
+  }
+
+
+  img {
+  
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border: none;
+  }
+  IMG.imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    }
+  
+
+  nav {
+  position: relative;
+  }
+  /*----------------------------------------------------------------------------------------*/
+  /* Menús nav/aside/footer */
+
+
+  /* Menu navegación */
+  ul.menunav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: url(https://wallpapercave.com/wp/bsxa3BA.jpg) repeat-x center ;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #493500;
+  }
+  
+  li.menunav {
+    float: left;
+  }
+  
+  li a.menunav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid#815d01;
+    border-left:  1px solid #634700;
+  }
+  li a:hover {
+    background: url(../imagesBlogWow/stars.jpg) ;
+  }
+
+  #menu {
+    display:none;
+  }
+
+      /*---- Desplegable-----*/
+
+      ul, ol {
+        list-style:none;
+      }
+      .menunav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+      }
+      
+      .menunav li:hover > ul {
+        display:block;
+      }
+      
+      .menunav li ul li {
+        position:relative;
+      }
+      
+      .menunav li ul li ul {
+        right:-160px;
+        top:-0px;
+      }
+  
+
+ /*----------Aside Social-----------*/
+  .social {
+      position: fixed; 
+      left: 0; 
+      top: 200px; 
+      z-index: 2000; 
+  }
+  
+  .social ul {
+      list-style: none;
+      
+    }
+  
+  .social ul li a {
+      display: inline-block;
+      color:#fff;
+      border-radius: 3px;
+      background: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+     -webkit-transition:all 500ms ease;
+     -o-transition:all 500ms ease;
+      transition:all 500ms ease; 
+      }
+  
+      .social ul li .icon-facebook {background:#3b5998;} 
+      .social ul li .icon-twitter {background: #00abf0;}
+      .social ul li .icon-google {background: #d95232;}
+      .social ul li .icon-youtube {background: #ae181f;}
+      .social ul li .icon-mail {background: #666666;}
+      .social ul li .icon-chevron-small-left {
+        background: rgba(0, 0, 0, 0);
+        padding-left: 5px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      
+      }
+
+      #right {
+        display: none;
+      }
+
+      .social ul li a:hover {
+        opacity: 75%;
+        padding: 10px 30px; 
+    }
+    
+  /*Footer*/
+
+  footer{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    padding: 6px;
+    margin: 10px;
+ }
+
+
+ /*-----------------------------------------------------------------------------*/
+    /* Forma div clases*/
+    .floating{
+      display: flex;
+    }
+  
+    .clases{
+      background: rgba(0, 0, 0, 0.336);
+      border-radius: 10px;
+      line-height: 200%;
+      font-size: 150%;
+      width: 100% ;
+      height: 100%;
+      padding: 10px;
+      margin: 10px 40px 10px 40px;
+      position: relative;
+      display: inline-block;
+    }
+  
+
+   .titulo{
+      text-align: center;
+      font-size: 200%;
+      font-family: "Friz Quadrata Std Medium";
+      text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.734);
+      padding: 30px;
+  
+    }
+    .roles {
+      font-size: 90%;
+      line-height: 100%;
+      padding: 20px;
+    }
+

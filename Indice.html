@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/mediaqueriesTemplate.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Indice Formulario</title>
 </head>
 
@@ -37,24 +38,40 @@
         </nav>
         <h1>Indice proyecto Autocorreción.</h1>
     </header>
+    <aside class="social">
+        <span class="icon-chevron-small-right" id="right" onclick="openSideBar()"></span>
+        <ul id="xsocial">
+            <li><a href="https://www.facebook.com/WowChakra/?fref=ts" target="_blank" class="icon-facebook" ></a></li>
+            <li><a href="https://twitter.com/WowChakra" target="_blank" class="icon-twitter"></a></li>
+            <li><a href="https://plus.google.com/+Wowchakra_PyPG" target="_blank" class="icon-google"></a></li>
+            <li><a href="https://www.youtube.com/user/wowchakra" target="_blank" class="icon-youtube"></a></li>
+            <li><a href="mailto:contacto@falconmasters.com" class="icon-mail"></a></li>
+            <li><a href="#" class="icon-chevron-small-left" id="left" onclick="closeSideBar()"></a></li>
+        </ul>
+      </aside>
     <main>
         <section>
-
+            <h3>¿Quién fue el grandioso portador de la Crematoria hasta su fallecimiento al principio de la 7ª expansión de WoW: Legion ?</h3>
+            <form>
+                <input type="radio" name="pregunta" value="a" checked> <label>Alamuerte </label> <br/>
+                <input type="radio" name="pregunta" value="b"> <label>Arthas Menethil</label>  <br/>
+                <input type="radio" name="pregunta" value="c"> <label>Tyrion Vadin</label> 
+              </form>
         </section>
     </main>
     <footer>
-        <ul class="navFooter">
-            <li class="navFooter">
-                <a class="navFooter" href="#2">Condiciones de compra</a>
+        <ul class="menunav">
+            <li class="menunav">
+                <a class="menunav" href="#2">Condiciones de compra</a>
             </li>
-            <li class="navFooter">
-                <a class="navFooter" href="#1">Sobre nosotros</a>
+            <li class="menunav">
+                <a class="menunav" href="#1">Sobre nosotros</a>
             </li>
-            <li class="navFooter">
-                <a class="navFooter" href="#3">Deposito legal</a>
+            <li class="menunav">
+                <a class="menunav" href="#3">Deposito legal</a>
             </li>
-            <li class="navFooter">
-                <a class="navFooter" href="#4">FAQ</a>
+            <li class="menunav">
+                <a class="menunav" href="#4">FAQ</a>
             </li>
     </footer>
 </body>

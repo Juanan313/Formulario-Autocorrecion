@@ -1,0 +1,277 @@
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background: #090806 url(http://bnetcmsus-a.akamaihd.net/cms/template_resource/ri/RI8Q9HOWY4U01465961118458.jpg) no-repeat top center;
+  background-attachment: fixed;
+  font-weight: normal;
+  color: #fff;
+  margin: 5em;
+  margin-top:1em;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.734);
+  font-family: "Friz Quadrata Std Medium";
+}
+
+header{
+  position: relative;
+  width: 98%;
+  top:0;
+  left:0;
+  color: #ffffff;
+  padding: 6px;
+  margin: 10px;
+  margin-top:0px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+  
+
+main{
+  margin: 0.8em;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  display: block;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.734);
+  font-family: "Friz Quadrata Std Medium";
+  font-weight: normal;
+  font-size: 3em;
+  font-style: bold;
+  letter-spacing: 3px ;
+  text-transform: capitalize;;  
+}
+
+h3{
+  background-color: hsla(36, 51%, 77%, 0.644);
+  color: hsl(0, 0%, 100%);
+  margin:0;
+  padding: 6px;
+  padding: 3px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  padding: 0.3em;
+  box-sizing: border-box;
+}
+
+
+
+section{
+  background-color: #6666668e;
+  margin: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 0.7em;
+  box-sizing: border-box;
+
+}
+
+
+img {
+
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border: none;
+}
+IMG.imgcenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border:none;
+  }
+
+
+nav {
+position: relative;
+}
+/*----------------------------------------------------------------------------------------*/
+/* Menús nav/aside/footer */
+
+
+/* Menu navegación */
+ul.menunav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: url(https://wallpapercave.com/wp/bsxa3BA.jpg) repeat-x center ;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #493500;
+}
+
+li.menunav {
+  float: left;
+}
+
+li a.menunav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid#815d01;
+  border-left:  1px solid #634700;
+}
+li a:hover {
+  background: url(../imagesBlogWow/stars.jpg) ;
+}
+
+/*----------Aside Social-----------*/
+.social {
+    position: fixed; 
+    left: 0; 
+    top: 200px; 
+    z-index: 2000; 
+}
+
+.social ul {
+    list-style: none;
+    
+  }
+
+.social ul li a {
+    display: inline-block;
+    color:#fff;
+    border-radius: 3px;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+   -webkit-transition:all 500ms ease;
+   -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+    }
+
+    .social ul li .icon-facebook {background:#3b5998;} 
+    .social ul li .icon-twitter {background: #00abf0;}
+    .social ul li .icon-google {background: #d95232;}
+    .social ul li .icon-youtube {background: #ae181f;}
+    .social ul li .icon-mail {background: #666666;}
+    .social ul li .icon-chevron-small-left {
+      background: rgba(0, 0, 0, 0);
+      padding-left: 5px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    }
+
+    #right {
+      display: none;
+    }
+
+    .social ul li a:hover {
+      opacity: 75%;
+      padding: 10px 30px; 
+  }
+  
+/*Footer*/
+
+footer{
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  padding: 6px;
+  margin: 10px;
+}
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+ body {
+   font-size: 25px;
+ }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  body {
+    font-size: 11px;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  body {
+    font-size: 9px;
+  }
+}
