@@ -40,4 +40,14 @@
             <D correcta="True" > Squash </D>
         </Respuestas>
     </Pregunta>
+     <Pregunta>
+        <Categoría> Deportes </Categoría>
+        <Enunciado id="Deporte1">  </Enunciado>
+        <Respuestas> 
+            <A> Cristiano Ronaldo </A>
+            <B> Lazaro Cuenca </B>
+            <C correcta="True"> Andrés Iniesta </C>
+            <D> David Gelpi </D>
+        </Respuestas>
+    </Pregunta>
 </Trivial>
