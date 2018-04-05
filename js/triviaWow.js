@@ -1,6 +1,26 @@
-window.onload = function(){
+var PREGUNTASXML;
 
+window.onload = function(){
+    cargarPreguntasXML();
 };
+
+
+function cargarPreguntasXML() {
+    $.ajax({
+        type: "GET",
+        url: "https://rawgit.com/Juanan313/Formulario-Autocorrecion/master/js/triviaWow.xml",
+        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+        dataType: "xml",
+        success: function (data) {
+            PREGUNTASXML = data;
+
+        },
+        error: function (e) {
+            console.log(e.responseText);
+            alert("Error al procesar la petición AJAX de Usuarios.");
+        }
+    }); 
+}
 
 // function loadXMLDoc() {
 //     var xmlhttp = new XMLHttpRequest();
