@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wowTrivial>
-
-<!-- -----Preguntas Mazmorras----- -->
     <pregunta>
         <Categoría> Mazmorras </Categoría>
         <Tipo> Selección </Tipo>
@@ -57,7 +55,6 @@
                 <D> Kael'thas </D>
         </Respuestas>
     </pregunta>
-<!-- -----Preguntas Objetos----- -->
     <pregunta>
         <Categoría> Objetos </Categoría>
         <Tipo> Selección </Tipo>
@@ -80,7 +77,6 @@
                 <D> Khadgar </D>
         </Respuestas>
     </pregunta>
-<!-- -----Preguntas Clases----- -->
     <pregunta>
         <Categoría> Clases </Categoría>
         <Tipo> Selección </Tipo>
@@ -114,7 +110,6 @@
                 <D correcta="True"> Centauros </D>
         </Respuestas>
     </pregunta>
-<!-- -----Preguntas Personajes----- -->
     <pregunta>
         <Categoría> Personajes </Categoría>
         <Tipo> Selección </Tipo>
@@ -192,7 +187,6 @@
                 <D> Lider de los Elfos de la Noche </D>
         </Respuestas>
     </pregunta>
-<!-- -----Preguntas Historia----- -->
     <pregunta>
         <Categoría> Historia </Categoría>
         <Tipo> Selección </Tipo>
