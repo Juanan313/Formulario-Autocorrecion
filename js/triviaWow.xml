@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wowTrivial>
+
+<!-- -----Preguntas Mazmorras----- -->
     <pregunta>
         <Categoría> Mazmorras </Categoría>
         <Tipo> Selección </Tipo>
@@ -34,6 +36,29 @@
         </Respuestas>
     </pregunta>
     <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Mútliple </Tipo>
+        <Enunciado> ¿Cúales de estas mazmorras pertenecen a la expansión Mist of Pandaria? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Cervecería del Trueno </A>
+                <B> Grim Batol </B>
+                <C correcta="True"> Templo del dragón de Jade </C>
+                <D correcta="True"> Monasterio del Shadopan </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Quién es el último jefe de la banda Ciudadela de la Corona de hielo? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> El rey Exánime </A>
+                <B> Ragnaros </B>
+                <C> Alamuerte </C>
+                <D> Kael'thas </D>
+        </Respuestas>
+    </pregunta>
+<!-- -----Preguntas Objetos----- -->
+    <pregunta>
         <Categoría> Objetos </Categoría>
         <Tipo> Selección </Tipo>
         <Enunciado> ¿Qué arma forjó el Veredicto Cinéreo para enfrentarse al Rey Exánime? </Enunciado>
@@ -55,6 +80,7 @@
                 <D> Khadgar </D>
         </Respuestas>
     </pregunta>
+<!-- -----Preguntas Clases----- -->
     <pregunta>
         <Categoría> Clases </Categoría>
         <Tipo> Selección </Tipo>
@@ -68,6 +94,17 @@
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Con cuales de estas especializaciones cuenta la clase Paladin? </Enunciado>
+        <Respuestas> 
+                <A  correcta="True"> Protección </A>
+                <B> Defensor Justo</B>
+                <C> Vengador Sagrado </C>
+                <D  correcta="True"> Represión </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
         <Tipo> Selección </Tipo>
         <Enunciado> ¿Cómo se llamaba la Forma Druídica que dió lugar a la maldición de los huargen? </Enunciado>
         <Respuestas> 
@@ -77,6 +114,7 @@
                 <D correcta="True"> Centauros </D>
         </Respuestas>
     </pregunta>
+<!-- -----Preguntas Personajes----- -->
     <pregunta>
         <Categoría> Personajes </Categoría>
         <Tipo> Selección </Tipo>
@@ -154,17 +192,7 @@
                 <D> Lider de los Elfos de la Noche </D>
         </Respuestas>
     </pregunta>
-    <pregunta>
-        <Categoría> Personajes </Categoría>
-        <Tipo> Selección </Tipo>
-        <Enunciado> ¿Cuál es el título de Elune? </Enunciado>
-        <Respuestas> 
-                <A> Sacerdotisa de Elune </A>
-                <B correcta="True"> Suma Sacerdotisa de Elune</B>
-                <C> La mujer de Malfurion </C>
-                <D> Lider de los Elfos de la Noche </D>
-        </Respuestas>
-    </pregunta>
+<!-- -----Preguntas Historia----- -->
     <pregunta>
         <Categoría> Historia </Categoría>
         <Tipo> Selección </Tipo>
@@ -174,6 +202,28 @@
                 <B> Gul'Dan </B>
                 <C> Illidan Tempestira </C>
                 <D> Orgrim Martillo Maldito </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> Tras vencer a Arthas en ICC, ¿Quién ocuparía el trono del rey Exánime y su puesto? </Enunciado>
+        <Respuestas> 
+                <A> Lord Tryrion </A>
+                <B> Varyan Wrynn </B>
+                <C> Illidan Tempestira </C>
+                <D  correcta="True"> Bolvar Fordragon </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cuál es el título de Elune? </Enunciado>
+        <Respuestas> 
+                <A> Sacerdotisa de Elune </A>
+                <B correcta="True"> Suma Sacerdotisa de Elune</B>
+                <C> La mujer de Malfurion </C>
+                <D> Lider de los Elfos de la Noche </D>
         </Respuestas>
     </pregunta>
 </wowTrivial>
