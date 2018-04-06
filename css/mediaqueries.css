@@ -6,6 +6,11 @@
     box-sizing: border-box;
   }
 
+  body{
+    background: #090806 url(http://bnetcmsus-a.akamaihd.net/cms/template_resource/ri/RI8Q9HOWY4U01465961118458.jpg) no-repeat top center;
+    background-attachment: fixed;
+  }
+
   /*---- Floats -----*/
   .floatLeft {
       float: left;
@@ -18,20 +23,21 @@
   /*--- Colores de fondo ---*/
 
   .bg-Green {
-      background-color: greenyellow;
+      background-color: rgba(172, 255, 47, 0.397);
   }
 
   .bg-Red {
-      background-color: rgb(143, 21, 52);
+      background-color: rgba(143, 21, 52, 0.575);
   }
   
   .bg-greyBlue {
-      background-color: rgb(66, 96, 121);
+      background-color: rgba(66, 96, 121, 0.432);
   }
 
   .bg-yellow {
       background-color: #e9dd01;
   }
+
 /* ----- TEXTO ------*/
   /* --- Alineado texto ----*/
   .txt-center {
@@ -88,13 +94,106 @@
     height: 100vh;
 }
 
+/*------ Contenedor Preguntas -----*/
+
+.contenedorPreguntas {
+    display: none;
+}
+
+/*----- Accordion Syle------*/
+
+#accordion h3 {
+    background-color: #6e6e6e59;
+}
+#accordion .ui-accordion-content {
+    width: 100%;
+    background-color: #d6a82a81;
+    color: rgb(0, 0, 0);
+    font-size: 10pt;
+    line-height: 16pt;
+  }
 
 
+/*----------Aside SocialBar-----------*/
+#socialBar {
+    position: fixed; 
+    left: 0; 
+    top: 200px; 
+    z-index: 2000; 
+  }
+  
+  #socialBar ul {
+    list-style: none;
+    
+  }
+  
+  #socialBar ul li a {
+    display: inline-block;
+    color:#fff;
+    border-radius: 3px;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+   -webkit-transition:all 500ms ease;
+   -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+    }
+  
+    #socialBar ul li .icon-facebook {background:#3b5998;} 
+    #socialBar ul li .icon-twitter {background: #00abf0;}
+    #socialBar ul li .icon-google {background: #d95232;}
+    #socialBar ul li .icon-youtube {background: #ae181f;}
+    #socialBar ul li .icon-mail {background: #666666;}
+    #socialBar ul li .icon-chevron-small-left {
+      background: rgba(0, 0, 0, 0);
+      padding-left: 5px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    }
+  
+    #right {
+      display: none;
+    }
+  
+    #socialBar ul li a:hover {
+      opacity: 75%;
+      padding: 10px 30px; 
+  }
+
+/*--- Separar columnas -----*/
+/*---- Izquiera -----*/
+    .sep-Left-1 {margin-left: 8.33%;}
+    .sep-Left-2 {margin-left: 16.66%;}
+    .sep-Left-3 {margin-left: 25%;}
+    .sep-Left-4 {margin-left: 33.33%;}
+    .sep-Left-5 {margin-left: 41.66%;}
+    .sep-Left-6 {margin-left: 50%;}
+    .sep-Left-7 {margin-left: 58.33%;}
+    .sep-Left-8 {margin-left: 66.66%;}
+    .sep-Left-9 {margin-left: 75%;}
+    .sep-Left-10 {margin-left: 83.33%;}
+    .sep-Left-11 {margin-left: 91.66%;}
+    .sep-Left-12 {margin-left: 100%;}
+/*---- Derecha -----*/
+    .sep-right-1 {margin-right: 8.33%;}
+    .sep-right-2 {margin-right: 16.66%;}
+    .sep-right-3 {margin-right: 25%;}
+    .sep-right-4 {margin-right: 33.33%;}
+    .sep-right-5 {margin-right: 41.66%;}
+    .sep-right-6 {margin-right: 50%;}
+    .sep-right-7 {margin-right: 58.33%;}
+    .sep-right-8 {margin-right: 66.66%;}
+    .sep-right-9 {margin-right: 75%;}
+    .sep-right-10 {margin-right: 83.33%;}
+    .sep-right-11 {margin-right: 91.66%;}
+    .sep-right-12 {margin-right: 100%;}
+  
 /* ----- MEDIAQUERIES ----- */
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     [class*="col-"] {width: 100%;}
+    [class*="sep-"] {width: 0%;}
     #socialBar {
         display: none;
     }
@@ -114,6 +213,9 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    #socialBar {
+        display: none;
+    }
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -129,4 +231,8 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    #socialBar {
+        display: block;
+    }
 }
