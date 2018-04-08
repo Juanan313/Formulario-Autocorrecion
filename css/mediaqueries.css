@@ -9,6 +9,20 @@
   body{
     background: #090806 url(http://bnetcmsus-a.akamaihd.net/cms/template_resource/ri/RI8Q9HOWY4U01465961118458.jpg) no-repeat top center;
     background-attachment: fixed;
+    font-family: "Friz Quadrata Std Medium";
+  }
+
+  button {
+    background-color: rgb(41, 28, 0);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
 
   /*---- Floats -----*/
@@ -97,13 +111,13 @@
 /*------ Contenedor Preguntas -----*/
 
 .contenedorPreguntas {
-    display: none;
+    /* display: none; */
 }
 
 /*----- Accordion Syle------*/
 
 #accordion h3 {
-    background-color: #6e6e6e59;
+    background-color: #171b1481;
 }
 #accordion .ui-accordion-content {
     width: 100%;
@@ -188,6 +202,63 @@
     .sep-right-11 {margin-right: 91.66%;}
     .sep-right-12 {margin-right: 100%;}
   
+
+/*---- Fuentes -----*/
+@font-face{
+    font-family: 'Friz Quadrata Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Medium'), url('fonts/friz-quadrata-std-medium-5870338ec7ef8.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Bold'), url('fonts/friz-quadrata-std-bold-587034a220f9f.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Bold Italic'), url('fonts/friz-quadrata-std-bold-italic-587033d6d4298.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Italic'), url('fonts/friz-quadrata-std-italic-587033b2c95df.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Friz Quadrata Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Bold'), url('fonts/friz-quadrata-std-bold-587034a220f9f.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Bold Italic'), url('fonts/friz-quadrata-std-bold-italic-587033d6d4298.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Italic'), url('fonts/friz-quadrata-std-italic-587033b2c95df.woff') format('woff');
+}
+
+
 /* ----- MEDIAQUERIES ----- */
 
 @media only screen and (max-width: 600px) {
