@@ -16,9 +16,34 @@
     <title>Prueba Media Queries</title>
 </head>
 <body>
-    <header class="bg-Red col-12 txt-center">
+    <header class="col-12 txt-center">
         <h1>Esta es una prueba</h1>
-        <button id="btnForm" class="floatRight"  title="Abre popup formulario"><i class="fa fa-bars"></i></button>
+        <!-- <button id="btnForm" class="floatRight"  title="Abre popup formulario"><i class="fa fa-bars"></i></button> -->
+        <nav>
+            <div class="icon-menu" id="menu"></div>
+            <ul class="menunav">
+                <li class="menunav"><div class="icon-menu"></div></li>                 
+                <li class="menunav"><a class="menunav" href="#Home">Home</a></li> 
+                <li class="menunav"><a class="menunav" href="#BattleforAzeroth">Noticas</a>
+                    <ul>
+                            <li class="menunav"><a class="menunav" href="paginas/BattleforAzeroth.html">Noticas Expansion</a>
+                            <li class="menunav"><a class="menunav" href="paginas/RazasAliadas.html">Razas Aliadas</a>
+                    </ul>
+                </li>
+                <li class="menunav"><a class="menunav" href="#juego">El juego</a>
+                <ul>
+                    <li class="menunav"><a class="menunav" href="paginas/Clases.html">Clases</a></li> 
+                    <li class="menunav"><a class="menunav" href="#Razas">Razas</a>
+                    <ul>
+                            <li class="menunav"><a class="menunav" href="paginas/RazasHorda.html">Horda</a>
+                            <li class="menunav"><a class="menunav" href="paginas/RazasAlianza.html">Alianza</a>
+                    </ul>
+                    </li> 
+                </ul>
+                </li>
+                <li class="menunav"><a class="menunav" href="paginas/Expansiones.html">Expansiones</a></li>                             
+        </ul>
+        </nav>
     </header>
     <aside id="socialBar">
             <span class="icon-chevron-small-right" id="right" onclick="openSideBar()"></span>
@@ -103,6 +128,13 @@
             <li>Puntos:</li>
         </ul>
     </aside>
-    <footer class="col-12"></footer>    
+    <footer class="col-12">
+            <ul class="menunav">
+              <li class="menunav"><a class="menunav" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
+              <li class="menunav"><a class="menunav" href="#About" onclick="footerExpandInfo(about)">About</a></li>
+              <li class="menunav"><a class="menunav" href="#Help" onclick="footerExpandInfo(help)">Help</a></li>
+              <li class="menunav"><a class="menunav" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
+            </ul>
+    </footer>    
 </body>
 </html>

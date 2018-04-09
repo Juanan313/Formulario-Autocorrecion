@@ -82,10 +82,10 @@
         <Tipo> Selección </Tipo>
         <Enunciado> ¿Qué especie surgió de la relación entre Zaetar y Theradras? </Enunciado>
         <Respuestas> 
-                <A> Forma de Lobo </A>
-                <B correcta="True"> Forma de la manada</B>
-                <C> Forma de lo salvaje </C>
-                <D> No tiene nada que ver con los Druidas </D>
+               <A> Harpías </A>
+                <B> Troggs</B>
+                <C> Magnatauras </C>
+                <D correcta="True"> Centauros </D>
         </Respuestas>
     </pregunta>
     <pregunta>
@@ -103,11 +103,11 @@
         <Categoría> Clases </Categoría>
         <Tipo> Selección </Tipo>
         <Enunciado> ¿Cómo se llamaba la Forma Druídica que dió lugar a la maldición de los huargen? </Enunciado>
-        <Respuestas> 
-                <A> Harípas </A>
-                <B> Troggs</B>
-                <C> Magnatauras </C>
-                <D correcta="True"> Centauros </D>
+        <Respuestas>
+                <A> Forma de Lobo </A>
+                <B correcta="True"> Forma de la manada</B>
+                <C> Forma de lo salvaje </C>
+                <D> No tiene nada que ver con los Druidas </D>
         </Respuestas>
     </pregunta>
     <pregunta>

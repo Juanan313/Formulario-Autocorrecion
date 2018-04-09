@@ -118,13 +118,15 @@
 
 #accordion h3 {
     background-color: #171b1481;
-    color: white
+    color: white;
+    text-shadow: 2px 2px #000000;
 }
 #accordion .ui-accordion-content {
     width: 100%;
     background-color: #d6a82a81;
     color: rgb(0, 0, 0);
     font-size: 10pt;
+    font-family: Friz Quadrata Std Bold;
     line-height: 16pt;
   }
 /* ----- Checkbox y radioButtons custom ---*/
@@ -193,7 +195,83 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }  
+  } 
+
+  /*----------------------- Menu navegación ---------------------*/
+
+nav {
+    position: relative;
+  }
+  
+  ul.menunav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid black;
+  }
+  
+  li.menunav {
+    float: left;
+  }
+  
+  li a.menunav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid black;
+    border-left:  1px solid black;
+  }
+  li a:hover {
+    background: url(../imagesBlogWow/stars.jpg) ;
+    opacity: 0.85; 
+  }
+  
+  .icon-menu {
+    padding: 14px 16px;
+  }
+  
+  #menu {
+    display:none;
+  }
+    /*---- Desplegable-----*/
+  
+    ul, ol {
+      list-style:none;
+    }
+    .menunav li ul {
+      display:none;
+      position:absolute;
+      min-width:140px;
+    }
+    
+    .menunav li:hover > ul {
+      display:block;
+    }
+    
+    .menunav li ul li {
+      position:relative;
+    }
+    
+    .menunav li ul li ul {
+      right:-160px;
+      top:-0px;
+    }
+    
+  
+  /*Footer*/
+
+  footer{
+    position:relative;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+ }
 
 /*----------Aside SocialBar-----------*/
 #socialBar {

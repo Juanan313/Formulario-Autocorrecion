@@ -87,7 +87,7 @@ function crearCheck(indice) {
     var texto;
     texto = $(pregunta).find("Enunciado").text();
 
-    var enunciado = $("<h3 style{background-color: '93db5c81'}></h3>").append("texto");
+    var enunciado = $("<h3></h3>").append("texto");
     var accordionPregunta = $("<div/>").html("Elija todas las posibles respuestas que considere: ")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
