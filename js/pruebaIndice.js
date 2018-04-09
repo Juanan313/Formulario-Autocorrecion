@@ -34,8 +34,26 @@ window.onload = function () {
     });
 
     $("#footer4").on("click", function() {
-        footerExpandInfo(Privacy);
+        Privacy.dialog();
     });
+
+
+    $("#navForm").fancybox({
+        helpers : {
+                title : {type:'inside'}
+            },
+        afterShow: function () {
+            
+            
+            $("#mySubmit").on("click", function () {
+                $.fancybox.close();
+            });
+        }
+    });
+
+    $("#puntuar").on("click", function() {
+        puntuar();
+    })
 };
 
 function cargarPreguntasXML() {
@@ -119,10 +137,10 @@ function crearRadio(indice) {
     var accordionPregunta = $("<div/>").html("Elija una posible respuesta: ")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
-    respuestas += "<input type='radio' name='pregunta' value='a' checked> <label>" + textoRespuestas.find("A").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='b' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='c' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='d' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='A' checked> <label>" + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
@@ -141,10 +159,10 @@ function crearCheck(indice) {
     var accordionPregunta = $("<div/>").html("Elija todas las posibles respuestas que considere: ")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
-    respuestas += "<input type='checkbox' name='pregunta' value='a' > <label>" + textoRespuestas.find("A").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='b' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='c' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='d' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='A' > <label>" + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
@@ -159,7 +177,17 @@ function crearText(indice) {
 /* ----- Comprobar puntuación -----*/
 
 function puntuar() {
-    
+    var idPreguntas = [];
+    $("#accordion form").each(function(i, k){
+        idPreguntas.push(k.id);
+
+    });
+    console.log(idPreguntas);
+}
+
+function isCorrecta(id) {
+    // probar alternativas 
+    $("#accordion form #"+id+" input[name='pregunta']:checked").val();
 }
 
 
@@ -193,4 +221,4 @@ function footerExpandInfo(id) {
     
 
     alert(id);
-}    
+}

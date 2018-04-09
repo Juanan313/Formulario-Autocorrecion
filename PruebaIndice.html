@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/fancybox-master/dist/jquery.fancybox.css">
     <!--Links Scripts-->
     <script src="js/pruebaIndice.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/fancybox-master/dist/jquery.fancybox.js"></script>
     <title>Prueba Media Queries</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
                 <li class="menunav"><div class="icon-menu"></div></li>                 
                 <li class="menunav"><a class="menunav" href="#Home">Home</a></li> 
                 <li class="menunav"><a class="menunav" href="#juego">El juego</a></li>
-                <li class="menunav"><a class="menunav" href="#form">Registro</a></li>                       
+                <li class="menunav"><a class="menunav" href="#myForm" id="navForm">Registro</a></li>                       
         </ul>
         </nav>
     </header>
@@ -53,7 +55,7 @@
                 <div id="accordion">
             </div>
             <div class="botonSubmit">
-                    <button class="btn cargarPreguntas floatRight" id="sumbitPuntos">Comprobar puntuación</button>
+                    <button class="btn cargarPreguntas floatRight" id="puntuar">Comprobar puntuación</button>
             </div>
         </section>
     </main>
@@ -75,6 +77,20 @@
               <li class="menunav"><a class="menunav" id="footer4" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
             </ul>
     </footer>
+    <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
+        <input type="text" name="NombreUsuario " class="floatRight" placeholder="Nombre"/>
+        <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
+        <input type="text" name="Email" placeholder="Email" class="floatRight"/><br/><br/>
+        Genero:
+        <select>
+                <option value="Male">Hombre</option>
+                <option value="Female">Mujer</option>
+                <option value="Other">Otro</option>
+
+              </select>
+        <input type="submit" value="Submit" id="mySubmit" class="btn"/>
+        </div>
+    </form>
     </div>   
 </body>
 </html>

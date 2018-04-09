@@ -25,6 +25,7 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  
 
   /*---- Floats -----*/
   .floatLeft {
@@ -119,6 +120,28 @@
 main {
     margin-bottom: 50px;
 }
+/* ----- Form Registro -----*/
+#myForm {
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#myForm input[type=text] {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#myForm select {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
 
 /*----- Accordion Syle------*/
 
@@ -132,8 +155,8 @@ main {
     background-color: #d6a82a81;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px azure;
-    font-size: 10pt;
-    font-family: Friz Quadrata Std Bold;
+    font-size: 11pt;
+    font-family: Friz Quadrata Std Bold Italic ;
     line-height: 16pt;
   }
 /* ----- Checkbox y radioButtons custom ---*/
@@ -330,6 +353,11 @@ nav {
       opacity: 75%;
       padding: 10px 30px; 
   }
+
+  /* ----- Formulario Popup -----*/
+  #myForm {
+    display: none;       
+}
 
 /*--- Separar columnas -----*/
 /*---- Izquiera -----*/
