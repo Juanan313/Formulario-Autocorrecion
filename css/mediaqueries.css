@@ -15,6 +15,7 @@
   button {
     background-color: rgb(41, 28, 0);
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -111,7 +112,12 @@
 /*------ Contenedor Preguntas -----*/
 
 .contenedorPreguntas {
-    /* display: none; */
+    padding: 10px;
+    
+}
+
+main {
+    margin-bottom: 50px;
 }
 
 /*----- Accordion Syle------*/
@@ -125,6 +131,7 @@
     width: 100%;
     background-color: #d6a82a81;
     color: rgb(0, 0, 0);
+    text-shadow: 1px 1px azure;
     font-size: 10pt;
     font-family: Friz Quadrata Std Bold;
     line-height: 16pt;
@@ -197,6 +204,12 @@
     transform: rotate(45deg);
   } 
 
+  /* ----- Contenedor -----*/
+  .contenedor {
+      height: auto;
+      padding: 10px;
+  }
+
   /*----------------------- Menu navegación ---------------------*/
 
 nav {
@@ -227,7 +240,7 @@ nav {
     border-left:  1px solid black;
   }
   li a:hover {
-    background: url(../imagesBlogWow/stars.jpg) ;
+    background-color: rgb(182, 182, 182);
     opacity: 0.85; 
   }
   
@@ -266,11 +279,10 @@ nav {
   /*Footer*/
 
   footer{
-    position:relative;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
  }
 
 /*----------Aside SocialBar-----------*/

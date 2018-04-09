@@ -10,14 +10,31 @@ window.onload = function () {
 
 
 
-    // $("#loadXml").on("clikc", function () {
-    //     crearRadio(1);
-    // });
+     $("#loadXml").on("click", function () {
+        prepararPreguntasXML();
+        $(".botonLoadXML").hide();
+    });
     $("#left").on("click", function () {
         closeSideBar();
     });
     $("#right").on("click", function () {
         openSideBar();
+    });
+
+    $("#footer1").on("click", function() {
+        footerExpandInfo(contact);
+    });
+
+    $("#footer2").on("click", function() {
+        footerExpandInfo(About);
+    });
+
+    $("#footer3").on("click", function() {
+        footerExpandInfo(Help);
+    });
+
+    $("#footer4").on("click", function() {
+        footerExpandInfo(Privacy);
     });
 };
 
@@ -28,7 +45,7 @@ function cargarPreguntasXML() {
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(xhttp.responseText, "text/xml");
             PREGUNTASXML = xmlDoc.getElementsByTagName("pregunta");
-            prepararPreguntasXML()
+            prepararPreguntasRandom();
         }
     };
     xhttp.open("GET", "https://raw.githubusercontent.com/Juanan313/Formulario-Autocorrecion/master/js/triviaWow.xml", true);
@@ -58,9 +75,40 @@ function prepararPreguntasXML() {
                 console.log("default");
         }
         console.log("------");
-    }
+    } 
 }
 
+function prepararPreguntasRandom() {
+    var numPreguntas = 10;
+    var numRandom;
+    var preguntas = [];
+    var contador = 0;
+    while (contador < numPreguntas) {
+        numRandom = Math.floor(Math.random() * PREGUNTASXML.length);
+        var tipo = PREGUNTASXML[numRandom].getElementsByTagName('Tipo')[0].innerHTML;
+        if (preguntas.indexOf(PREGUNTASXML[numRandom]) != -1) {
+            continue;
+        } else {
+        switch (tipo) {
+            case " Selección ":
+                crearRadio(numRandom);
+                preguntas.push(PREGUNTASXML[numRandom]);
+                contador = preguntas.length;
+                continue;
+            case " Múltiple ":
+                crearCheck(numRandom);
+                preguntas.push(PREGUNTASXML[numRandom]);
+                contador = preguntas.length;
+                continue;
+            default:
+                console.log("default");
+        }
+        contador = preguntas.length;
+        console.log("------");
+    }}
+}
+
+/*--- Crea Formulario tipo RadioButton, preguntas de respuesta única ---*/
 
 function crearRadio(indice) {
     var pregunta = PREGUNTASXML[indice];
@@ -81,6 +129,8 @@ function crearRadio(indice) {
     $("#accordion").append("<h3>" + texto + "</h3>");
     $("#accordion").append(accordionPregunta);
 }
+
+/*--- Crea Formulario tipo Checkbox, preguntas de respuesta múltiple ---*/
 
 function crearCheck(indice) {
     var pregunta = PREGUNTASXML[indice];
@@ -106,7 +156,11 @@ function crearText(indice) {
     console.log("todavia no esta lista");
 }
 
+/* ----- Comprobar puntuación -----*/
 
+function puntuar() {
+    
+}
 
 
 
@@ -127,4 +181,16 @@ function openSideBar() {
     button = document.getElementById("right");
     button.style.display = "none";
 }
-    /* --------------------------------------*/
+    /* ------------Info Footer---------------*/
+
+    var contact = "juanan.pujals@gmail.com"
+    var about = "Gran parte de la información mostrada en esta página ha sido extraida de páginas relacionada con el mismo juego como: \\n whttps://worldofwarcraft.com/es-es/ \\n  http://www.wowchakra.com/ \\n http://es.wowhead.com/"
+    var help = "Mmmm lo siento no lo he entendido bien, ¿para qué se supone que necesitas ayuda?"
+    var privacy = "Gran parte de el contenido de esta página no es de mi propieda y no ha sido utilizado con animo de lucro, tan solo con fines lúdicos."
+
+ 
+function footerExpandInfo(id) {
+    
+
+    alert(id);
+}    

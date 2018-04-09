@@ -16,32 +16,16 @@
     <title>Prueba Media Queries</title>
 </head>
 <body>
+    <div class="col-12 contenedor">
     <header class="col-12 txt-center">
-        <h1>Esta es una prueba</h1>
         <!-- <button id="btnForm" class="floatRight"  title="Abre popup formulario"><i class="fa fa-bars"></i></button> -->
         <nav>
             <div class="icon-menu" id="menu"></div>
             <ul class="menunav">
                 <li class="menunav"><div class="icon-menu"></div></li>                 
                 <li class="menunav"><a class="menunav" href="#Home">Home</a></li> 
-                <li class="menunav"><a class="menunav" href="#BattleforAzeroth">Noticas</a>
-                    <ul>
-                            <li class="menunav"><a class="menunav" href="paginas/BattleforAzeroth.html">Noticas Expansion</a>
-                            <li class="menunav"><a class="menunav" href="paginas/RazasAliadas.html">Razas Aliadas</a>
-                    </ul>
-                </li>
-                <li class="menunav"><a class="menunav" href="#juego">El juego</a>
-                <ul>
-                    <li class="menunav"><a class="menunav" href="paginas/Clases.html">Clases</a></li> 
-                    <li class="menunav"><a class="menunav" href="#Razas">Razas</a>
-                    <ul>
-                            <li class="menunav"><a class="menunav" href="paginas/RazasHorda.html">Horda</a>
-                            <li class="menunav"><a class="menunav" href="paginas/RazasAlianza.html">Alianza</a>
-                    </ul>
-                    </li> 
-                </ul>
-                </li>
-                <li class="menunav"><a class="menunav" href="paginas/Expansiones.html">Expansiones</a></li>                             
+                <li class="menunav"><a class="menunav" href="#juego">El juego</a></li>
+                <li class="menunav"><a class="menunav" href="#form">Registro</a></li>                       
         </ul>
         </nav>
     </header>
@@ -57,64 +41,19 @@
             </ul>
     </aside>
     <div id="vacio" class="col-2">&nbsp;</div>
-    <main class="col-8 floatLeft sep-Left-2 h50">
+    <main class="col-8 floatLeft sep-Left-2">
         
         <h2>Preguntas Trivia Wow</h2>
         <section>
+            <!-- <div class="botonLoadXML">
+                <h3 class="cargarPreguntas">Preguntas Aleatorias</h3>
+                <button class="btn cargarPreguntas" id="loadXml">Cargar preguntas</button>
+            </div> -->
             <div class="contenedorPreguntas col-12">
                 <div id="accordion">
-                        <!-- <h3 class="cargarPreguntas">Preguntas Aleatorias</h3>
-                        <div>
-                        <button class="btn cargarPreguntas" id="loadXml">Cargar preguntas</button>
-                        </div> -->
-                        <!-- <h3>¿Quién fue el grandioso portador de la Crematoria hasta su fallecimiento al principio de la 7ª expansión de WoW: Legion ?</h3>
-                        <div>
-                            <form id="demo">
-                                <input type="radio" name="pregunta" value="a" checked> <label>Alamuerte </label> <br/>
-                                <input type="radio" name="pregunta" value="b"> <label>Arthas Menethil</label>  <br/>
-                                <input type="radio" name="pregunta" value="c"> <label>Tyrion Vadin</label><br/>
-                                <input type="radio" name="pregunta" value="d"> <label>Kadghar</label>
-
-                            </form>
-                        </div>
-                        <h3>¿Quién fué responsable de que Draenor se convirtiera en Terrallende?</h3>
-                        <div>
-                            <form id="demo">
-                                <input type="radio" name="pregunta" value="a" checked> <label> Ner'Zhul </label> <br/>
-                                <input type="radio" name="pregunta" value="b"> <label> Gul'Dan </label>  <br/>
-                                <input type="radio" name="pregunta" value="c"> <label> Illidan Tempestira </label> <br/>
-                                <input type="radio" name="pregunta" value="d"> <label> Grommash Grito Infernal </label>
-                            </form>
-                        </div>
-                        <h3>Section 3</h3>
-                        <div>
-                          <p>
-                          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                          </p>
-                          <ul>
-                            <li>List item one</li>
-                            <li>List item two</li>
-                            <li>List item three</li>
-                          </ul>
-                        </div>
-                        <h3>Section 4</h3>
-                        <div>
-                          <p>
-                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                          mauris vel est.
-                          </p>
-                          <p>
-                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                          inceptos himenaeos.
-                          </p>
-                        </div>
-                      </div> -->
+            </div>
+            <div class="botonSubmit">
+                    <button class="btn cargarPreguntas floatRight" id="sumbitPuntos">Comprobar puntuación</button>
             </div>
         </section>
     </main>
@@ -130,11 +69,12 @@
     </aside>
     <footer class="col-12">
             <ul class="menunav">
-              <li class="menunav"><a class="menunav" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
-              <li class="menunav"><a class="menunav" href="#About" onclick="footerExpandInfo(about)">About</a></li>
-              <li class="menunav"><a class="menunav" href="#Help" onclick="footerExpandInfo(help)">Help</a></li>
-              <li class="menunav"><a class="menunav" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
+              <li class="menunav"><a class="menunav" id="footer1" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
+              <li class="menunav"><a class="menunav" id="footer2" href="#About" onclick="footerExpandInfo(about)">About</a></li>
+              <li class="menunav"><a class="menunav" id="footer3" href="#Help" onclick="footerExpandInfo(help)">Help</a></li>
+              <li class="menunav"><a class="menunav" id="footer4" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
             </ul>
-    </footer>    
+    </footer>
+    </div>   
 </body>
 </html>

@@ -13,18 +13,18 @@
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
-        <Tipo> Selección </Tipo>
-        <Enunciado> El difunto hijo de Varok Colmillosaurio se llamaba... </Enunciado>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales de estas Mazmorras pertenecen a la expansión Legion? </Enunciado>
         <Respuestas> 
-                <A> Garrosh </A>
-                <B> Thrall </B>
-                <C correcta="True"> Dranosh </C>
-                <D> Valahk </D>
+                <A  correcta="True"> Cámaras de las Celadoras </A>
+                <B> Cámaras de piedra </B>
+                <C> El templo del dragón de jade </C>
+                <D  correcta="True"> Regreso a Kharazan </D>
         </Respuestas>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
-        <Tipo> Mútliple </Tipo>
+        <Tipo> Múltiple </Tipo>
         <Enunciado> Estilos de lucha del Maestro de forja Throngus en Grim Batol </Enunciado>
         <Respuestas> 
                 <A correcta="True"> Sin Armas </A>
@@ -35,7 +35,7 @@
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
-        <Tipo> Mútliple </Tipo>
+        <Tipo> Múltiple </Tipo>
         <Enunciado> ¿Cúales de estas mazmorras pertenecen a la expansión Mist of Pandaria? </Enunciado>
         <Respuestas> 
                 <A correcta="True"> Cervecería del Trueno </A>
@@ -78,6 +78,28 @@
         </Respuestas>
     </pregunta>
     <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Qué objetos de movilidad te entregaban al principio de la expansión Legión cuando no se podía volar? </Enunciado>
+        <Respuestas> 
+                <A> Piedra de hogar </A>
+                <B correcta="True"> Piedra de hogar de Dalaran </B>
+                <C> Cometa gigante </C>
+                <D correcta="True"> Silvato de Maestro de vuelo  </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cómo se llama el bastón que Khadgar heredó de su antecesor Medivh? </Enunciado>
+        <Respuestas> 
+                <A> Felanor </A>
+                <B> Mano de Tyr </B>
+                <C> Rasgacielos </C>
+                <D correcta="True"> Atiesh  </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
         <Categoría> Clases </Categoría>
         <Tipo> Selección </Tipo>
         <Enunciado> ¿Qué especie surgió de la relación entre Zaetar y Theradras? </Enunciado>
@@ -91,7 +113,7 @@
     <pregunta>
         <Categoría> Clases </Categoría>
         <Tipo> Múltiple </Tipo>
-        <Enunciado> ¿Con cuales de estas especializaciones cuenta la clase Paladin? </Enunciado>
+        <Enunciado> ¿Con cuáles de estas especializaciones cuenta la clase Paladin? </Enunciado>
         <Respuestas> 
                 <A  correcta="True"> Protección </A>
                 <B> Defensor Justo</B>
@@ -108,6 +130,28 @@
                 <B correcta="True"> Forma de la manada</B>
                 <C> Forma de lo salvaje </C>
                 <D> No tiene nada que ver con los Druidas </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales son especializaciones de la clase Druida? </Enunciado>
+        <Respuestas>
+                <A correcta="True"> Feral </A>
+                <B correcta="True"> Oso </B>
+                <C> Pollo salvaje </C>
+                <D correcta="True"> Equilibrio </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales son especializaciones de la clase Pícaro? </Enunciado>
+        <Respuestas>
+                <A correcta="True"> Forajido </A>
+                <B> Truhán </B>
+                <C> Saqueador </C>
+                <D correcta="True"> Sutileza </D>
         </Respuestas>
     </pregunta>
     <pregunta>
@@ -176,6 +220,17 @@
                 <D> N'Zoth </D>
         </Respuestas>
     </pregunta>
+     <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cuáles de estos personajes pertenecen a la Alianza? </Enunciado>
+        <Respuestas> 
+                <A> Illidan </A>
+                <B correcta="True"> Cringrís </B>
+                <C correcta="True"> Moira Thaurissan </C>
+                <D> Bairne </D>
+        </Respuestas>
+    </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
         <Tipo> Selección </Tipo>
@@ -218,6 +273,17 @@
                 <B correcta="True"> Suma Sacerdotisa de Elune</B>
                 <C> La mujer de Malfurion </C>
                 <D> Lider de los Elfos de la Noche </D>
+        </Respuestas>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cuáles de estos dragones han sido aspectos? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Alamuerte </A>
+                <B correcta="True"> Ysera</B>
+                <C correcta="True"> Alexstrasza </C>
+                <D> Onyxia </D>
         </Respuestas>
     </pregunta>
 </wowTrivial>
