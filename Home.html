@@ -15,9 +15,9 @@
     <script src="js/jquery-ui/jquery-ui.min.js"></script>
     <script src="js/fancybox-master/dist/jquery.fancybox.js"></script>
     <script src="js/pruebaIndice.js"></script>
-    <title>Prueba Media Queries</title>
+    <title>Home</title>
 </head>
-<body class="randomXML">
+<body class="home">
     <div class="col-12 contenedor">
     <header class="col-12 txt-center">
         <!-- <button id="btnForm" class="floatRight"  title="Abre popup formulario"><i class="fa fa-bars"></i></button> -->
@@ -25,9 +25,9 @@
             <div class="icon-menu" id="menu"></div>
             <ul class="menunav">
                 <li class="menunav"><div class="icon-menu"></div></li>                 
-                <li class="menunav"><a class="menunav" href="#Home">Home</a></li> 
-                <li class="menunav"><a class="menunav" href="#juego">El juego</a></li>
-                <li class="menunav"><a class="menunav" href="#myForm" id="navForm">Registro</a></li>                       
+                <li class="menunav"><a class="menunav" href="#Home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li> 
+                <li class="menunav"><a class="menunav" href="https://juanan313.github.io/LLMM-Proyecto/Home.html"><i class="fa fa-pie-chart"></i>El juego</a></li>
+                <li class="menunav"><a class="menunav" href="#myForm" id="navForm"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Registro</a></li>                       
         </ul>
         </nav>
     </header>
@@ -45,30 +45,38 @@
     <div id="vacio" class="col-2">&nbsp;</div>
     <main class="col-8 floatLeft sep-Left-2">
         
-        <h2>Preguntas Trivia Wow</h2>
-        <section>
-            <!-- <div class="botonLoadXML">
-                <h3 class="cargarPreguntas">Preguntas Aleatorias</h3>
-                <button class="btn cargarPreguntas" id="loadXml">Cargar preguntas</button>
-            </div> -->
-            <div class="contenedorPreguntas col-12">
-                <div id="accordion">
-            </div>
-            <div class="botonSubmit">
-                    <button class="btn cargarPreguntas floatRight" id="puntuar">Comprobar puntuación</button>
+        <h2>Trivia Wow</h2>
+        <section class="home">
+            <div class="bg-yellow">
+            <p>¡¿Preparado para responder preguntas de todos los ambitos del videojuego MMO World of warcraft?!
+                Entre las preguntas podemos encotrar de diferentes categorías.
+            </p>
+            <ul>
+                <li class="categorias txt-center"><strong>Personajes</strong></li>
+                <li class="categorias txt-center"><strong>Mazmorras</strong></li>
+                <li class="categorias txt-center"><strong>Historia</strong></li>
+                <li class="categorias txt-center"><strong>Objetos</strong></li>
+                <li class="categorias txt-center"><strong>Clases</strong></li>
+            </ul>
+        </div>
+        <div>
+            <button>Preguntas Random</button>
+            <button>Todas las preguntas</button>
+        </div>
+            <h3>Instrucciones:</h3>
+        <div class="instrucciones bg-greyBlue">
+            <ul id="instrucciones" class="txt-White">
+                <li>Clicka en una de las imágenes para cargar el trivial</li>
+                <li>Izq 10 preguntas Aleatorias / Derecha todas las preguntas</li>
+                <li>Respondes todas ellas</li>
+                <li>Al final obtendrás una puntuación</li>
+            </ul>
             </div>
         </section>
     </main>
-    <aside class="col-2 bg-greyBlue floatLeft">
-        <h3>Instrucciones:</h3>
-        <ul id="instrucciones" class="txt-White">
-            <!-- <li>Clicka en el botón Cargar</li>
-            <li>Se cargarán 10 preguntas Aleatorias</li> -->
-            <li>Respondes todas ellas</li>
-            <li>Al final obtendrás una puntuación</li>
-            <li>Puntos:</li>
-        </ul>
-    </aside>
+
+        
+
     <footer class="col-12">
             <ul class="menunav">
               <li class="menunav"><a class="menunav" id="footer1" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
@@ -78,9 +86,9 @@
             </ul>
     </footer>
     <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
-        <input type="text" name="NombreUsuario " class="floatRight" placeholder="Nombre"/>
+        <input type="text" name="NombreUsuario" autocomplete='name' class="floatRight" placeholder="Nombre"/>
         <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
-        <input type="text" name="Email" placeholder="Email" class="floatRight"/><br/><br/>
+        <input type="text" name="Email"  autocomplete='Email' placeholder="Email" class="floatRight"/><br/><br/>
         Genero:
         <select>
                 <option value="Male">Hombre</option>

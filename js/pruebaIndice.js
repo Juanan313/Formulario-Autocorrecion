@@ -2,12 +2,8 @@ var PREGUNTASXML;
 
 /*--- Función onload para cargar todo los eventos y las llamadas a las funciones -----*/
 window.onload = function () {
-    $(function () {
-        $("#accordion").accordion();
-    });
+
     cargarPreguntasXML();
-
-
 
 
      $("#loadXml").on("click", function () {
@@ -87,8 +83,6 @@ function prepararPreguntasXML() {
             case " Múltiple ":
                 crearCheck(i);
                 break;
-            case "selecttext":
-                crearText(i);
             default:
                 console.log("default");
         }
@@ -124,6 +118,7 @@ function prepararPreguntasRandom() {
         contador = preguntas.length;
         console.log("------");
     }}
+    $("#accordion").accordion();
 }
 
 /*--- Crea Formulario tipo RadioButton, preguntas de respuesta única ---*/
@@ -168,10 +163,6 @@ function crearCheck(indice) {
 
     $("#accordion").append("<h3>" + texto + "</h3>");
     $("#accordion").append(accordionPregunta);
-}
-
-function crearText(indice) {
-    console.log("todavia no esta lista");
 }
 
 /* ----- Comprobar puntuación -----*/

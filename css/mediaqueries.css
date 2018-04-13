@@ -12,6 +12,15 @@
     font-family: "Friz Quadrata Std Medium";
   }
 
+  section.home{
+      padding: 15px;
+  }
+
+  .home div {
+      padding: 15px;
+      border-radius: 8px;
+  }
+
   button {
     background-color: rgb(41, 28, 0);
     border: none;
@@ -25,6 +34,7 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  
   
 
   /*---- Floats -----*/
@@ -51,7 +61,7 @@
   }
 
   .bg-yellow {
-      background-color: #e9dd01;
+      background-color: #e5e90186;
   }
 
 /* ----- TEXTO ------*/
@@ -91,9 +101,10 @@
   /*------ Por ID -------*/
   ul#instrucciones {
     list-style: none;
+
   }
   ul#instrucciones li {
-    padding-left: 10px;
+    padding-left: 20px;
 
   }
 /*---- ALTO DE PANTALLA -----*/
