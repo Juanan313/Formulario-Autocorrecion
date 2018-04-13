@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Links CSS-->
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../js/fancybox-master/dist/jquery.fancybox.css">
+    <!--Links Scripts-->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+    <script src="../js/triviaWow.js"></script>
+    <title>Todas las preguntas</title>
+</head>
+<body>
+    <div class="col-12 contenedor">
+    <header class="col-12 txt-center">
+        <!-- <button id="btnForm" class="floatRight"  title="Abre popup formulario"><i class="fa fa-bars"></i></button> -->
+        <nav>
+            <div class="icon-menu" id="menu"></div>
+            <ul class="menunav">
+                <li class="menunav"><div class="icon-menu"></div></li>                 
+                <li class="menunav"><a class="menunav" href="../Home.html">Home</a></li> 
+                <li class="menunav"><a class="menunav" href="https://juanan313.github.io/LLMM-Proyecto/Home.html">El juego</a></li>
+                <li class="menunav"><a class="menunav" href="#myForm" id="navForm">Registro</a></li>                       
+        </ul>
+        </nav>
+    </header>
+    <aside id="socialBar">
+            <span class="icon-chevron-small-right" id="right" onclick="openSideBar()"></span>
+            <ul id="xsocial">
+                <li><a href="https://www.facebook.com/WowChakra/?fref=ts" target="_blank" class="icon-facebook" ></a></li>
+                <li><a href="https://twitter.com/WowChakra" target="_blank" class="icon-twitter"></a></li>
+                <li><a href="https://plus.google.com/+Wowchakra_PyPG" target="_blank" class="icon-google"></a></li>
+                <li><a href="https://www.youtube.com/user/wowchakra" target="_blank" class="icon-youtube"></a></li>
+                <li><a href="mailto:contacto@falconmasters.com" class="icon-mail"></a></li>
+                <li><a href="#" class="icon-chevron-small-left" id="left"></a></li>
+            </ul>
+    </aside>
+    <div id="vacio" class="col-2">&nbsp;</div>
+    <main class="col-8 floatLeft sep-Left-2">
+        
+        
+        <section>
+            <h2>Preguntas Trivia Wow</h2>
+            
+            <div class="contenedorPreguntas col-12">
+                <div id="accordion"></div>
+            </div>
+            <div class="botonSubmit">
+                    <button class="btn cargarPreguntas floatRight" id="puntuar">Comprobar puntuación</button>
+            </div>
+        </section>
+    </main>
+    <div class="hidden" id="dialogo"></div>
+    <aside class="col-2 bg-greyBlue floatLeft">
+        <h3>Instrucciones:</h3>
+        <ul id="instrucciones" class="txt-White">
+            <li>Respondes todas las preguntas</li>
+            <li>Al final clicka el botón comprobar preguntas</li>
+            <li>Puntos:</li>
+        </ul>
+    </aside>
+    <footer class="col-12">
+            <ul class="menunav">
+              <li class="menunav"><a class="menunav" id="footer1" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
+              <li class="menunav"><a class="menunav" id="footer2" href="#About" onclick="footerExpandInfo(about)">About</a></li>
+              <li class="menunav"><a class="menunav" id="footer3" href="#Help" onclick="footerExpandInfo(help)">Help</a></li>
+              <li class="menunav"><a class="menunav" id="footer4" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
+            </ul>
+    </footer>
+    
+    <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
+        <img src="../img/grupo.png" alt="grupo">
+        <input type="text" name="NombreUsuario " class="floatRight" placeholder="Nombre"/>
+        <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
+        <input type="text" name="Email" placeholder="Email" class="floatRight"/><br/><br/>
+        Genero:
+        <select>
+                <option value="Male">Hombre</option>
+                <option value="Female">Mujer</option>
+                <option value="Other">Otro</option>
+
+              </select>
+        <input type="submit" value="Submit" id="mySubmit" class="btn"/>
+    </form>
+    </div>   
+</body>
+</html>

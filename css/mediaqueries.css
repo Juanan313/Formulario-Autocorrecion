@@ -9,7 +9,7 @@
   body{
     background: #090806 url(http://bnetcmsus-a.akamaihd.net/cms/template_resource/ri/RI8Q9HOWY4U01465961118458.jpg) no-repeat top center;
     background-attachment: fixed;
-    font-family: "Friz Quadrata Std Medium";
+    font-family: "Friz Quadrata Std Medium" !important;
   }
 
   section.home{
@@ -19,7 +19,13 @@
   .home div {
       padding: 15px;
       border-radius: 8px;
+      text-align: center;
   }
+
+  .ui-widget {
+    font-family: "Friz Quadrata Std Medium" !important;
+    font-size: 1em;
+}
 
   button {
     background-color: rgb(41, 28, 0);
@@ -33,6 +39,13 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+  }
+  
+  img {
+      height: 80%;
+      width: 80%;
+      margin:auto;
+      display:block;
   }
   
   
@@ -135,7 +148,7 @@ main {
 #myForm {
     padding: 15px;
     width: 500px;
-    height: 300px;
+    height: auto;
     border-radius: 10px;
     background-color: rgb(150, 150, 150);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

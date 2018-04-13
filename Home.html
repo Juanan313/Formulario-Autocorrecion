@@ -14,7 +14,7 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery-ui/jquery-ui.min.js"></script>
     <script src="js/fancybox-master/dist/jquery.fancybox.js"></script>
-    <script src="js/pruebaIndice.js"></script>
+    <script src="js/triviaWow.js"></script>
     <title>Home</title>
 </head>
 <body class="home">
@@ -49,19 +49,23 @@
         <section class="home">
             <div class="bg-yellow">
             <p>¡¿Preparado para responder preguntas de todos los ambitos del videojuego MMO World of warcraft?!
-                Entre las preguntas podemos encotrar de diferentes categorías.
+                Entre las preguntas podemos encotrar de diferentes categorías. <strong>Personajes, Mazmorras, Historia, Objetos y Clases.</strong>
             </p>
-            <ul>
+            <!-- <ul>
                 <li class="categorias txt-center"><strong>Personajes</strong></li>
                 <li class="categorias txt-center"><strong>Mazmorras</strong></li>
                 <li class="categorias txt-center"><strong>Historia</strong></li>
                 <li class="categorias txt-center"><strong>Objetos</strong></li>
                 <li class="categorias txt-center"><strong>Clases</strong></li>
-            </ul>
+            </ul> -->
         </div>
-        <div>
-            <button>Preguntas Random</button>
-            <button>Todas las preguntas</button>
+        <div class="col-6 h50 floatLeft bg-greyBlue">
+            <h3>10 Preguntas aleatorias</h3>
+            <a href=Html/TriviaRandom.html><img src="img/khadgar.jpg" alt="preguntasRandom"></a>
+        </div>
+        <div class="col-6 h50 floatLeft bg-greyBlue">
+            <h3>Todas las preguntas</h3>   
+            <a href=Html/TriviaAll.html><img src="img/allXml.jpg" alt="todasLasPreguntas"></a>
         </div>
             <h3>Instrucciones:</h3>
         <div class="instrucciones bg-greyBlue">
@@ -72,11 +76,10 @@
                 <li>Al final obtendrás una puntuación</li>
             </ul>
             </div>
-        </section>
+        </section>    
     </main>
-
-        
-
+    <div class="hidden" id="dialogo"></div>
+    
     <footer class="col-12">
             <ul class="menunav">
               <li class="menunav"><a class="menunav" id="footer1" href="#Contact" onclick="footerExpandInfo(contact)">Contact</a></li>
@@ -86,6 +89,7 @@
             </ul>
     </footer>
     <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
+        <img src="img/grupo.png" alt="grupo">
         <input type="text" name="NombreUsuario" autocomplete='name' class="floatRight" placeholder="Nombre"/>
         <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
         <input type="text" name="Email"  autocomplete='Email' placeholder="Email" class="floatRight"/><br/><br/>
@@ -97,8 +101,7 @@
 
               </select>
         <input type="submit" value="Submit" id="mySubmit" class="btn"/>
-        </div>
     </form>
-    </div>   
+    </div>
 </body>
 </html>

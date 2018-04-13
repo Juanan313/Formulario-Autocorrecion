@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Links CSS-->
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="js/fancybox-master/dist/jquery.fancybox.css">
+    <link rel="stylesheet" href="../js/fancybox-master/dist/jquery.fancybox.css">
     <!--Links Scripts-->
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="js/fancybox-master/dist/jquery.fancybox.js"></script>
-    <script src="js/pruebaIndice.js"></script>
-    <title>Prueba Media Queries</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+    <script src="../js/triviaWow.js"></script>
+    <title>Preguntas Aleatorias</title>
 </head>
 <body class="randomXML">
     <div class="col-12 contenedor">
@@ -25,8 +25,8 @@
             <div class="icon-menu" id="menu"></div>
             <ul class="menunav">
                 <li class="menunav"><div class="icon-menu"></div></li>                 
-                <li class="menunav"><a class="menunav" href="#Home">Home</a></li> 
-                <li class="menunav"><a class="menunav" href="#juego">El juego</a></li>
+                <li class="menunav"><a class="menunav" href="../Home.html">Home</a></li> 
+                <li class="menunav"><a class="menunav" href="https://juanan313.github.io/LLMM-Proyecto/Home.html">El juego</a></li>
                 <li class="menunav"><a class="menunav" href="#myForm" id="navForm">Registro</a></li>                       
         </ul>
         </nav>
@@ -45,20 +45,18 @@
     <div id="vacio" class="col-2">&nbsp;</div>
     <main class="col-8 floatLeft sep-Left-2">
         
-        <h2>Preguntas Trivia Wow</h2>
         <section>
-            <!-- <div class="botonLoadXML">
-                <h3 class="cargarPreguntas">Preguntas Aleatorias</h3>
-                <button class="btn cargarPreguntas" id="loadXml">Cargar preguntas</button>
-            </div> -->
+            <h2>Preguntas Trivia Wow</h2>
+
             <div class="contenedorPreguntas col-12">
-                <div id="accordion">
-            </div>
+                <div id="accordion"></div>
             <div class="botonSubmit">
-                    <button class="btn cargarPreguntas floatRight" id="puntuar">Comprobar puntuación</button>
+                    <button class="btn floatRight" id="puntuar">Comprobar puntuación</button>
+            </div>
             </div>
         </section>
     </main>
+    <div class="hidden" id="dialogo"></div>
     <aside class="col-2 bg-greyBlue floatLeft">
         <h3>Instrucciones:</h3>
         <ul id="instrucciones" class="txt-White">
@@ -78,6 +76,7 @@
             </ul>
     </footer>
     <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
+        <img src="../img/grupo.png" alt="grupo">
         <input type="text" name="NombreUsuario " class="floatRight" placeholder="Nombre"/>
         <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
         <input type="text" name="Email" placeholder="Email" class="floatRight"/><br/><br/>
@@ -89,7 +88,6 @@
 
               </select>
         <input type="submit" value="Submit" id="mySubmit" class="btn"/>
-        </div>
     </form>
     </div>   
 </body>

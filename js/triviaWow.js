@@ -1,51 +1,226 @@
 var PREGUNTASXML;
 
-window.onload = function(){
+/*--- Función onload para cargar todo los eventos y las llamadas a las funciones -----*/
+window.onload = function () {
+
     cargarPreguntasXML();
+
+
+     $("#loadXml").on("click", function () {
+        prepararPreguntasXML();
+        $(".botonLoadXML").hide();
+    });
+    $("#left").on("click", function () {
+        closeSideBar();
+    });
+    $("#right").on("click", function () {
+        openSideBar();
+    });
+
+    $("#footer1").on("click", function() {
+        footerExpandInfo(contact);
+    });
+
+    $("#footer2").on("click", function() {
+        footerExpandInfo(About);
+    });
+
+    $("#footer3").on("click", function() {
+        footerExpandInfo(Help);
+    });
+
+    $("#footer4").on("click", function() {
+        footerExpandInfo(privacy);
+    });
+
+
+    $("#navForm").fancybox({
+        helpers : {
+                title : {type:'inside'}
+            },
+        afterShow: function () {
+            
+            
+            $("#mySubmit").on("click", function () {
+                $.fancybox.close();
+            });
+        }
+    });
+
+    $("#puntuar").on("click", function() {
+        puntuar();
+    })
 };
 
+window.onbeforeunload = function() {
+    return "Data will be lost if you leave the page, are you sure?";
+  };
 
 function cargarPreguntasXML() {
-    $.ajax({
-        type: "GET",
-        url: "https://rawgit.com/Juanan313/Formulario-Autocorrecion/master/js/triviaWow.xml",
-        contentType: "application/x-www-form-urlencoded; charset=utf-8",
-        dataType: "xml",
-        success: function (data) {
-            PREGUNTASXML = data;
-
-        },
-        error: function (e) {
-            console.log(e.responseText);
-            alert("Error al procesar la petición AJAX de Usuarios.");
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(xhttp.responseText, "text/xml");
+            PREGUNTASXML = xmlDoc.getElementsByTagName("pregunta");
+            if($("body.randomXML").length > 0) {
+            prepararPreguntasRandom();
+            } else {
+                prepararPreguntasXML();
+            }
         }
-    }); 
+    };
+    xhttp.open("GET", "https://raw.githubusercontent.com/Juanan313/Formulario-Autocorrecion/master/js/triviaWow.xml", true);
+    xhttp.send();
+
+
 }
 
-// function loadXMLDoc() {
-//     var xmlhttp = new XMLHttpRequest();
-//     xmlhttp.onreadystatechange = function() {
-//       if (this.readyState == 4 && this.status == 200) {
-//         myFunction(xmlhttp);
-//       }
-//     }
-//     xmlhttp.open("GET", "triviaWow.xml", true);
-//     xmlhttp.send();
-//   }
+/* ----- Funcion tratar XML -----------*/
 
-//   function myFunction(xml) {
-//     var i;
-//     var xmlDoc = xml.responseXML;
-//     console.log(xmlDoc);
-//     var enunciado = "";
-//     var form = "";
-//     var x = xmlDoc.getElementsByTagName("pregunta");
-//     for (i = 0; i <x.length; i++) { 
-//       enunciado += "<h3>"+x[i].getElementsByTagName("Enunciado").nodeValue+"</h3><br/>";
-//       /*form += '<input type="radio" name="pregunta" value="'+i+'" checked><label>' +
-//       x[i].getElementsByTagName("Repuestas")[i].childNodes[0].nodeValue +
-//       "</label>";*/
-//     }
-//     document.getElementById("demo").innerHTML = enunciado;
-// }
+function prepararPreguntasXML() {
+    var numPreguntas = PREGUNTASXML.length;
+    for (var i = 0; i < numPreguntas; i++) {
 
+        var tipo = PREGUNTASXML[i].getElementsByTagName('Tipo')[0].innerHTML;
+
+        switch (tipo) {
+            case " Selección ":
+                crearRadio(i);
+                break;
+            case " Múltiple ":
+                crearCheck(i);
+                break;
+            default:
+                console.log("default");
+        }
+        console.log("------");
+    } $("#accordion").accordion();
+}
+
+function prepararPreguntasRandom() {
+    var numPreguntas = 10;
+    var numRandom;
+    var preguntas = [];
+    var contador = 0;
+    while (contador < numPreguntas) {
+        numRandom = Math.floor(Math.random() * PREGUNTASXML.length);
+        var tipo = PREGUNTASXML[numRandom].getElementsByTagName('Tipo')[0].innerHTML;
+        if (preguntas.indexOf(PREGUNTASXML[numRandom]) != -1) {
+            continue;
+        } else {
+        switch (tipo) {
+            case " Selección ":
+                crearRadio(numRandom);
+                preguntas.push(PREGUNTASXML[numRandom]);
+                contador = preguntas.length;
+                continue;
+            case " Múltiple ":
+                crearCheck(numRandom);
+                preguntas.push(PREGUNTASXML[numRandom]);
+                contador = preguntas.length;
+                continue;
+            default:
+                console.log("default");
+        }
+        contador = preguntas.length;
+        console.log("------");
+    }}
+    $("#accordion").accordion();
+}
+
+/*--- Crea Formulario tipo RadioButton, preguntas de respuesta única ---*/
+
+function crearRadio(indice) {
+    var pregunta = PREGUNTASXML[indice];
+    var texto;
+    texto = $(pregunta).find("Enunciado").text();
+
+    var enunciado = $("<h3/>").append("texto");
+    var accordionPregunta = $("<div/>").html("Elija una posible respuesta: ")
+    var respuestas = "<form id='" + indice + "'>";
+    var textoRespuestas = $(pregunta).find("Respuestas");
+    respuestas += "<input type='radio' name='pregunta' value='A' checked> <label>" + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<input type='radio' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "</form>";
+    accordionPregunta.append(respuestas);
+
+    $("#accordion").append("<h3>" + texto + "</h3>");
+    $("#accordion").append(accordionPregunta);
+}
+
+/*--- Crea Formulario tipo Checkbox, preguntas de respuesta múltiple ---*/
+
+function crearCheck(indice) {
+    var pregunta = PREGUNTASXML[indice];
+    var texto;
+    texto = $(pregunta).find("Enunciado").text();
+
+    var enunciado = $("<h3></h3>").append("texto");
+    var accordionPregunta = $("<div/>").html("Elija todas las posibles respuestas que considere: ")
+    var respuestas = "<form id='" + indice + "'>";
+    var textoRespuestas = $(pregunta).find("Respuestas");
+    respuestas += "<input type='checkbox' name='pregunta' value='A' > <label>" + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<input type='checkbox' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "</form>";
+    accordionPregunta.append(respuestas);
+
+    $("#accordion").append("<h3>" + texto + "</h3>");
+    $("#accordion").append(accordionPregunta);
+}
+
+/* ----- Comprobar puntuación -----*/
+
+function puntuar() {
+    var idPreguntas = [];
+    $("#accordion form").each(function(i, k){
+        idPreguntas.push(k.id);
+
+    });
+    console.log(idPreguntas);
+}
+
+function isCorrecta(id) {
+    // probar alternativas 
+    $("#accordion form #"+id+" input[name='pregunta']:checked").val();
+}
+
+
+
+
+
+
+/*--- Abre y cierra la barra lateral ----*/
+function closeSideBar() {
+    element = document.getElementById("xsocial");
+    element.style.display = "none";
+    button = document.getElementById("right");
+    button.style.display = "block";
+}
+
+function openSideBar() {
+    element = document.getElementById("xsocial");
+    element.style.display = "block";
+    button = document.getElementById("right");
+    button.style.display = "none";
+}
+    /* ------------Info Footer---------------*/
+
+    var contact = "juanan.pujals@gmail.com"
+    var about = "Gran parte de la información mostrada en esta página ha sido extraida de páginas relacionada con el mismo juego como: \\n whttps://worldofwarcraft.com/es-es/ \\n  http://www.wowchakra.com/ \\n http://es.wowhead.com/"
+    var help = "Mmmm lo siento no lo he entendido bien, ¿para qué se supone que necesitas ayuda?"
+    var privacy = "Gran parte de el contenido de esta página no es de mi propieda y no ha sido utilizado con animo de lucro, tan solo con fines lúdicos."
+
+ 
+function footerExpandInfo(id) {
+    
+    // var dialogo = $("<div/>").attr("id", "dialog").html(id); 
+    $("#dialogo").html(id).attr("tittle","Info Footer").dialog({
+        title: "Dialog Title"
+    });    
+    // alert(id);
+}
