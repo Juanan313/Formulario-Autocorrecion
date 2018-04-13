@@ -179,12 +179,12 @@
     <pregunta>
         <Categoría> Personajes </Categoría>
         <Tipo> Selección </Tipo>
-        <Enunciado> Un draenei que antaño fue un robusto paladín cayó enfermo tras luchar con la legión ardiente y ahora es un poderoso Chamán </Enunciado>
+        <Enunciado> ¿Cuál de estos personajes ayuda a los personajes monje a conseguir Fu Zan, el Compañero del Errante? </Enunciado>
         <Respuestas> 
                 <A> Velen </A>
-                <B> Akama </B>
-                <C correcta="True"> Maraad </C>
-                <D> Nobundo </D>
+                <B> Tyrion </B>
+                <C> Chen </C>
+                <D correcta="True"> El rey mono </D>
         </Respuestas>
     </pregunta>
     <pregunta>
