@@ -92,7 +92,7 @@
                 <A> Piedra de hogar </A>
                 <B correcta="True"> Piedra de hogar de Dalaran </B>
                 <C> Cometa gigante </C>
-                <D correcta="True"> Silvato de Maestro de vuelo  </D>
+                <D correcta="True"> Silbato de Maestro de vuelo  </D>
         </Respuestas>
         <RespuestaCorrecta>pregunta=B&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
@@ -234,11 +234,11 @@
         <Enunciado> ¿A quién persiguió Arthas hasta Rasganorte? </Enunciado>
         <Respuestas> 
                 <A> Illidan </A>
-                <B> Mal'Ganis </B>
-                <C correcta="True"> Ner'Zhul </C>
+                <B correcta="True"> Mal'Ganis </B>
+                <C> Ner'Zhul </C>
                 <D> N'Zoth </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
      <pregunta>
         <Categoría> Personajes </Categoría>
@@ -251,18 +251,6 @@
                 <D> Bairne </D>
         </Respuestas>
         <RespuestaCorrecta>pregunta=B&#038;pregunta=C</RespuestaCorrecta>
-    </pregunta>
-    <pregunta>
-        <Categoría> Personajes </Categoría>
-        <Tipo> Selección </Tipo>
-        <Enunciado> ¿Cuál es el título de Elune? </Enunciado>
-        <Respuestas> 
-                <A> Sacerdotisa de Elune </A>
-                <B correcta="True"> Suma Sacerdotisa de Elune</B>
-                <C> La mujer de Malfurion </C>
-                <D> Lider de los Elfos de la Noche </D>
-        </Respuestas>
-        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Historia </Categoría>
@@ -281,8 +269,8 @@
         <Tipo> Selección </Tipo>
         <Enunciado> Tras vencer a Arthas en ICC, ¿Quién ocuparía el trono del rey Exánime y su puesto? </Enunciado>
         <Respuestas> 
-                <A> Lord Tryrion </A>
-                <B> Varyan Wrynn </B>
+                <A> Lord Tyrion </A>
+                <B> Varian Wrynn </B>
                 <C> Illidan Tempestira </C>
                 <D  correcta="True"> Bolvar Fordragon </D>
         </Respuestas>
@@ -291,7 +279,7 @@
     <pregunta>
         <Categoría> Historia </Categoría>
         <Tipo> Selección </Tipo>
-        <Enunciado> ¿Cuál es el título de Elune? </Enunciado>
+        <Enunciado> ¿Cuál es el título de Tyrande? </Enunciado>
         <Respuestas> 
                 <A> Sacerdotisa de Elune </A>
                 <B correcta="True"> Suma Sacerdotisa de Elune</B>
