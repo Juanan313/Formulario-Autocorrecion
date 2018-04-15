@@ -77,6 +77,10 @@
       background-color: #e5e90186;
   }
 
+  .bg-Brown {
+    background-color: #d6a82a81;
+  }
+
 /* ----- TEXTO ------*/
   /* --- Alineado texto ----*/
   .txt-center {
@@ -140,6 +144,22 @@
     padding: 10px;
     
 }
+/* ---- Estilo respuestas ---*/
+.respuestaIncorrecta {
+    color: rgb(194, 5, 5);
+    font-weight: bolder;
+    background: url(../resources/images/checkSprites.png) -3px 6px;
+    background-size: 58px 20px;
+    background-repeat: no-repeat;
+  }
+  
+  .respuestaCorrecta {
+    color: rgb(4, 146, 47);
+    font-weight: bolder;
+    background: url(../resources/images/checkSprites.png) -27px 6px;
+    background-size: 58px 20px;
+    background-repeat: no-repeat;
+  }
 
 main {
     margin-bottom: 50px;
@@ -150,8 +170,9 @@ main {
     width: 500px;
     height: auto;
     border-radius: 10px;
-    background-color: rgb(150, 150, 150);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("../img/Panel-bg-stacked.jpg") rgb(150, 150, 150);
+    font-family: "Friz Quadrata Std Medium";
+    color: white;
 }
 
 #myForm input[type=text] {
@@ -177,12 +198,22 @@ main {
 #accordion .ui-accordion-content {
     width: 100%;
     background-color: #d6a82a81;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px azure;
+    color: rgb(34, 28, 56);
+    text-shadow: 1px 1px rgb(245, 245, 245);
     font-size: 11pt;
     font-family: Friz Quadrata Std Bold Italic ;
     line-height: 16pt;
   }
+  #accordion label {
+      display: block;
+      width: 80%;
+      font-size: 1.2em;
+  }
+  #accordion label:hover {
+      background-color: rgba(204, 71, 71, 0.637);
+      border-radius: 5px;
+  }
+
 /* ----- Checkbox y radioButtons custom ---*/
 
 /* Customize the label (the container) */
@@ -250,6 +281,7 @@ main {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   } 
+
 
   /* ----- Contenedor -----*/
   .contenedor {
@@ -383,6 +415,11 @@ nav {
     display: none;       
 }
 
+    /*----  -------*/
+    .ui--content {
+    background: url(../img/Panel-bg-stacked.jpg) !important;
+    color: white !important;
+    }
 /*--- Separar columnas -----*/
 /*---- Izquiera -----*/
     .sep-Left-1 {margin-left: 8.33%;}

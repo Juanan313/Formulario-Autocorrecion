@@ -47,7 +47,7 @@
         
         <h2>Trivia Wow</h2>
         <section class="home">
-            <div class="bg-yellow">
+            <div class="bg-Brown">
             <p>¡¿Preparado para responder preguntas de todos los ambitos del videojuego MMO World of warcraft?!
                 Entre las preguntas podemos encotrar de diferentes categorías. <strong>Personajes, Mazmorras, Historia, Objetos y Clases.</strong>
             </p>
@@ -60,16 +60,16 @@
             </ul> -->
         </div>
         <div class="col-6 h50 floatLeft bg-greyBlue">
-            <h3>10 Preguntas aleatorias</h3>
+            <h3 class="txt-White">10 Preguntas aleatorias</h3>
             <a href=Html/TriviaRandom.html><img src="img/khadgar.jpg" alt="preguntasRandom"></a>
         </div>
         <div class="col-6 h50 floatLeft bg-greyBlue">
-            <h3>Todas las preguntas</h3>   
+            <h3 class="txt-White">Todas las preguntas</h3>   
             <a href=Html/TriviaAll.html><img src="img/allXml.jpg" alt="todasLasPreguntas"></a>
         </div>
-            <h3>Instrucciones:</h3>
-        <div class="instrucciones bg-greyBlue">
-            <ul id="instrucciones" class="txt-White">
+            <h3 class="txt-White">Instrucciones:</h3>
+        <div class="instrucciones bg-Brown">
+            <ul id="instrucciones">
                 <li>Clicka en una de las imágenes para cargar el trivial</li>
                 <li>Izq 10 preguntas Aleatorias / Derecha todas las preguntas</li>
                 <li>Respondes todas ellas</li>
@@ -88,13 +88,15 @@
               <li class="menunav"><a class="menunav" id="footer4" href="#Privacy" onclick="footerExpandInfo(privacy)">Privacy</a></li>
             </ul>
     </footer>
-    <form id="myForm" action="#form" method="post" title="Formulario Registro Usuario">
+    <div id="myForm">
+        <h2>Registro Usuario</h2>
+    <form action="#form" method="post" title="Formulario Registro Usuario">
         <img src="img/grupo.png" alt="grupo">
         <input type="text" name="NombreUsuario" autocomplete='name' class="floatRight" placeholder="Nombre"/>
         <input type="text" name="UserName" class="floatRight" placeholder="Username"/>   
         <input type="text" name="Email"  autocomplete='Email' placeholder="Email" class="floatRight"/><br/><br/>
         Genero:
-        <select>
+            <select>
                 <option value="Male">Hombre</option>
                 <option value="Female">Mujer</option>
                 <option value="Other">Otro</option>
@@ -102,6 +104,7 @@
               </select>
         <input type="submit" value="Submit" id="mySubmit" class="btn"/>
     </form>
+    </div>
     </div>
 </body>
 </html>

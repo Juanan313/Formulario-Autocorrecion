@@ -10,6 +10,7 @@
                 <C> Tol Barad </C>
                 <D> Ventormenta </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -21,6 +22,7 @@
                 <C> El templo del dragón de jade </C>
                 <D  correcta="True"> Regreso a Kharazan </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -32,6 +34,7 @@
                 <C correcta="True"> Escudo </C>
                 <D> Alabrarda </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -43,6 +46,7 @@
                 <C correcta="True"> Templo del dragón de Jade </C>
                 <D correcta="True"> Monasterio del Shadopan </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=C&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -54,6 +58,7 @@
                 <C> Alamuerte </C>
                 <D> Kael'thas </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Objetos </Categoría>
@@ -65,6 +70,7 @@
                 <C> La mano de Tyr </C>
                 <D correcta="True"> La agonía de las Sombras </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Objetos </Categoría>
@@ -76,6 +82,7 @@
                 <C> Anestarian caminante del sol </C>
                 <D> Khadgar </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Objetos </Categoría>
@@ -87,6 +94,7 @@
                 <C> Cometa gigante </C>
                 <D correcta="True"> Silvato de Maestro de vuelo  </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Objetos </Categoría>
@@ -98,6 +106,7 @@
                 <C> Rasgacielos </C>
                 <D correcta="True"> Atiesh  </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -109,6 +118,7 @@
                 <C> Magnatauras </C>
                 <D correcta="True"> Centauros </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -120,6 +130,7 @@
                 <C> Vengador Sagrado </C>
                 <D  correcta="True"> Represión </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -131,6 +142,7 @@
                 <C> Forma de lo salvaje </C>
                 <D> No tiene nada que ver con los Druidas </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -142,6 +154,7 @@
                 <C> Pollo salvaje </C>
                 <D correcta="True"> Equilibrio </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -153,6 +166,7 @@
                 <C> Saqueador </C>
                 <D correcta="True"> Sutileza </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -164,6 +178,7 @@
                 <C correcta="True"> Dranosh </C>
                 <D> Valahk </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -175,6 +190,7 @@
                 <C correcta="True"> Maraad </C>
                 <D> Nobundo </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -186,6 +202,7 @@
                 <C> Chen </C>
                 <D correcta="True"> El rey mono </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -197,6 +214,7 @@
                 <C correcta="True"> Aggramar </C>
                 <D> Eonar </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -208,6 +226,7 @@
                 <C> Fue obra de los Augusto Celestiales </C>
                 <D> Emperador Thaurissan </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -219,6 +238,7 @@
                 <C correcta="True"> Ner'Zhul </C>
                 <D> N'Zoth </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
     </pregunta>
      <pregunta>
         <Categoría> Personajes </Categoría>
@@ -230,6 +250,7 @@
                 <C correcta="True"> Moira Thaurissan </C>
                 <D> Bairne </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B&pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -241,6 +262,7 @@
                 <C> La mujer de Malfurion </C>
                 <D> Lider de los Elfos de la Noche </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Historia </Categoría>
@@ -252,6 +274,7 @@
                 <C> Illidan Tempestira </C>
                 <D> Orgrim Martillo Maldito </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Historia </Categoría>
@@ -263,6 +286,7 @@
                 <C> Illidan Tempestira </C>
                 <D  correcta="True"> Bolvar Fordragon </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Historia </Categoría>
@@ -274,6 +298,7 @@
                 <C> La mujer de Malfurion </C>
                 <D> Lider de los Elfos de la Noche </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Historia </Categoría>
@@ -285,5 +310,6 @@
                 <C correcta="True"> Alexstrasza </C>
                 <D> Onyxia </D>
         </Respuestas>
+        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=C</RespuestaCorrecta>
     </pregunta>
 </wowTrivial>

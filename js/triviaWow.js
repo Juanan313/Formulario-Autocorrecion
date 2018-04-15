@@ -18,19 +18,19 @@ window.onload = function () {
     });
 
     $("#footer1").on("click", function() {
-        footerExpandInfo(contact);
+        footerExpandInfo(contact, contactTittle);
     });
 
     $("#footer2").on("click", function() {
-        footerExpandInfo(About);
+        footerExpandInfo(about, aboutTittle);
     });
 
     $("#footer3").on("click", function() {
-        footerExpandInfo(Help);
+        footerExpandInfo(help, helpTittle);
     });
 
     $("#footer4").on("click", function() {
-        footerExpandInfo(privacy);
+        footerExpandInfo(privacy, privacyTittle);
     });
 
 
@@ -53,7 +53,7 @@ window.onload = function () {
 };
 
 window.onbeforeunload = function() {
-    return "Data will be lost if you leave the page, are you sure?";
+        return "Data will be lost if you leave the page, are you sure?";
   };
 
 function cargarPreguntasXML() {
@@ -78,6 +78,7 @@ function cargarPreguntasXML() {
 
 /* ----- Funcion tratar XML -----------*/
 
+/* --- Prepara todas las preguntas ---*/
 function prepararPreguntasXML() {
     var numPreguntas = PREGUNTASXML.length;
     for (var i = 0; i < numPreguntas; i++) {
@@ -94,10 +95,9 @@ function prepararPreguntasXML() {
             default:
                 console.log("default");
         }
-        console.log("------");
     } $("#accordion").accordion();
 }
-
+/* --- Prepara 10 preguntas aleatorias ----*/
 function prepararPreguntasRandom() {
     var numPreguntas = 10;
     var numRandom;
@@ -140,10 +140,10 @@ function crearRadio(indice) {
     var accordionPregunta = $("<div/>").html("Elija una posible respuesta: ")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
-    respuestas += "<input type='radio' name='pregunta' value='A' checked> <label>" + textoRespuestas.find("A").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
-    respuestas += "<input type='radio' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "<label><input type='radio' name='pregunta' value='A' > " + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<label><input type='radio' name='pregunta' value='B' > " + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<label><input type='radio' name='pregunta' value='C' > " + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<label><input type='radio' name='pregunta' value='D' > " + textoRespuestas.find("D").text() + "</label><br/>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
@@ -162,10 +162,10 @@ function crearCheck(indice) {
     var accordionPregunta = $("<div/>").html("Elija todas las posibles respuestas que considere: ")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
-    respuestas += "<input type='checkbox' name='pregunta' value='A' > <label>" + textoRespuestas.find("A").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='B' > <label>" + textoRespuestas.find("B").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='C' > <label>" + textoRespuestas.find("C").text() + "</label><br/>";
-    respuestas += "<input type='checkbox' name='pregunta' value='D' > <label>" + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "<label><input type='checkbox' name='pregunta' value='A' > " + textoRespuestas.find("A").text() + "</label><br/>";
+    respuestas += "<label><input type='checkbox' name='pregunta' value='B' > " + textoRespuestas.find("B").text() + "</label><br/>";
+    respuestas += "<label><input type='checkbox' name='pregunta' value='C' > " + textoRespuestas.find("C").text() + "</label><br/>";
+    respuestas += "<label><input type='checkbox' name='pregunta' value='D' > " + textoRespuestas.find("D").text() + "</label><br/>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
@@ -189,6 +189,11 @@ function isCorrecta(id) {
     $("#accordion form #"+id+" input[name='pregunta']:checked").val();
 }
 
+function printarPuntos(puntos) {
+
+};
+
+
 
 
 
@@ -211,16 +216,20 @@ function openSideBar() {
     /* ------------Info Footer---------------*/
 
     var contact = "juanan.pujals@gmail.com"
-    var about = "Gran parte de la información mostrada en esta página ha sido extraida de páginas relacionada con el mismo juego como: \\n whttps://worldofwarcraft.com/es-es/ \\n  http://www.wowchakra.com/ \\n http://es.wowhead.com/"
+    var contactTittle = "Contact Email"
+    var about = "Todas las preguntas de esta página están relacionadas con el videojuego World of Warcraft"
+    var aboutTittle = "Sobre esta página"
     var help = "Mmmm lo siento no lo he entendido bien, ¿para qué se supone que necesitas ayuda?"
+    var helpTittle = "¿Ayuda?"
     var privacy = "Gran parte de el contenido de esta página no es de mi propieda y no ha sido utilizado con animo de lucro, tan solo con fines lúdicos."
+    var privacyTittle = "Privacidad"
 
  
-function footerExpandInfo(id) {
+function footerExpandInfo(id, titulo) {
     
     // var dialogo = $("<div/>").attr("id", "dialog").html(id); 
     $("#dialogo").html(id).attr("tittle","Info Footer").dialog({
-        title: "Dialog Title"
+        title: titulo
     });    
     // alert(id);
 }
