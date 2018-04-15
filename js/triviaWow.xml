@@ -22,7 +22,7 @@
                 <C> El templo del dragón de jade </C>
                 <D  correcta="True"> Regreso a Kharazan </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -34,7 +34,7 @@
                 <C correcta="True"> Escudo </C>
                 <D> Alabrarda </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=C</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -46,7 +46,7 @@
                 <C correcta="True"> Templo del dragón de Jade </C>
                 <D correcta="True"> Monasterio del Shadopan </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=C&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=C&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Mazmorras </Categoría>
@@ -94,7 +94,7 @@
                 <C> Cometa gigante </C>
                 <D correcta="True"> Silvato de Maestro de vuelo  </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=B&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=B&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Objetos </Categoría>
@@ -130,7 +130,7 @@
                 <C> Vengador Sagrado </C>
                 <D  correcta="True"> Represión </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -154,7 +154,7 @@
                 <C> Pollo salvaje </C>
                 <D correcta="True"> Equilibrio </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Clases </Categoría>
@@ -166,7 +166,7 @@
                 <C> Saqueador </C>
                 <D correcta="True"> Sutileza </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=D</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -250,7 +250,7 @@
                 <C correcta="True"> Moira Thaurissan </C>
                 <D> Bairne </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=B&pregunta=C</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=B&#038;pregunta=C</RespuestaCorrecta>
     </pregunta>
     <pregunta>
         <Categoría> Personajes </Categoría>
@@ -310,6 +310,6 @@
                 <C correcta="True"> Alexstrasza </C>
                 <D> Onyxia </D>
         </Respuestas>
-        <RespuestaCorrecta>pregunta=A&pregunta=B&pregunta=C</RespuestaCorrecta>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=C</RespuestaCorrecta>
     </pregunta>
 </wowTrivial>
