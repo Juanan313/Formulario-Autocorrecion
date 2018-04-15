@@ -218,7 +218,7 @@ function checkMarkerCorrect(id, respuestaUsuario) {
     var respuestasUser = respuestaUsuario.split('&');
     $(respuestasUser).each(function (i, k) {
         respuestaProporcionada = respuestasUser[i].split('=')[1]
-        $("#accordion form#0 [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaCorrecta')
+        $("#accordion form#"+id+" [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaCorrecta')
     })
 
 }
@@ -227,7 +227,7 @@ function checkMarkIncorrect(id, respuestaUsuario) {
     var respuestasUser = respuestaUsuario.split('&');
     $(respuestasUser).each(function (i, k) {
         respuestaProporcionada = respuestasUser[i].split('=')[1]
-        $("#accordion form#0 [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaIncorrecta')
+        $("#accordion form#"+id+" [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaIncorrecta')
     })
 
 }
