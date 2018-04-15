@@ -1,5 +1,12 @@
+// Constante en la que almacenamos los datos y sobre la que trabajaremos
 var PREGUNTASXML;
 
+/* ---- Se carga el evento beforeUnload en el ready para que solo se cargue en la páginas indicadas ---- */
+$( document ).ready(function() {
+    if (! $("body.home").length >0) {
+        cargarBeforeUnload();
+    }
+});
 /*--- Función onload para cargar todo los eventos y las llamadas a las funciones -----*/
 window.onload = function () {
 
@@ -53,10 +60,16 @@ window.onload = function () {
 };
 
 /* ---- Mensaje al intentar recargar o cerrar la página -----*/
-window.onbeforeunload = function() {
-        return "Data will be lost if you leave the page, are you sure?";
-  };
+function cargarBeforeUnload () {
+window.onbeforeunload = function (e) {
+    var confirmationMessage = "Las preguntas respondidas de perderán, ¿estás seguro que quieres dejar la página?";
+    e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
+    return confirmationMessage;
+}
+};
 
+
+/* ---- AJAX -----*/
 function cargarPreguntasXML() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
