@@ -52,6 +52,7 @@ window.onload = function () {
     })
 };
 
+/* ---- Mensaje al intentar recargar o cerrar la página -----*/
 window.onbeforeunload = function() {
         return "Data will be lost if you leave the page, are you sure?";
   };
@@ -124,7 +125,6 @@ function prepararPreguntasRandom() {
                 console.log("default");
         }
         contador = preguntas.length;
-        console.log("------");
     }}
     $("#accordion").accordion();
 }
@@ -177,26 +177,77 @@ function crearCheck(indice) {
 
 function puntuar() {
     var idPreguntas = [];
-    $("#accordion form").each(function(i, k){
+    var respuestasCorrectas = 0;
+    $("#accordion form").each(function (i, k) {
         idPreguntas.push(k.id);
 
+        var respuestaCorrecta = $(PREGUNTASXML[k.id]).find("RespuestaCorrecta").text()
+        var respuestaUsuario = $("#accordion #" + k.id).serialize()
+
+        if (isCorrecta(respuestaCorrecta, respuestaUsuario)) {
+            respuestasCorrectas += 1;
+            checkMarkerCorrect(k.id, respuestaUsuario);
+        } else {
+            checkMarkIncorrect(k.id, respuestaUsuario);
+        }
+        printarPuntos(respuestasCorrectas, idPreguntas);
     });
-    console.log(idPreguntas);
+    
 }
 
-function isCorrecta(id) {
-    // probar alternativas 
-    $("#accordion form #"+id+" input[name='pregunta']:checked").val();
+function isCorrecta(respuestaCorrecta, respuestaUsuario) { 
+    
+    return respuestaCorrecta == respuestaUsuario;
+
 }
 
-function printarPuntos(puntos) {
+function checkMarkerCorrect(id, respuestaUsuario) {
+    var respuestasUser = respuestaUsuario.split('&');
+    $(respuestasUser).each(function (i, k) {
+        respuestaProporcionada = respuestasUser[i].split('=')[1]
+        $("#accordion form#0 [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaCorrecta')
+    })
 
+}
+
+function checkMarkIncorrect(id, respuestaUsuario) {
+    var respuestasUser = respuestaUsuario.split('&');
+    $(respuestasUser).each(function (i, k) {
+        respuestaProporcionada = respuestasUser[i].split('=')[1]
+        $("#accordion form#0 [value='" + respuestaProporcionada + "']").closest("label").addClass('respuestaIncorrecta')
+    })
+
+}
+
+
+/* ---- Muestra un dialogo con la puntuación obtenida -----*/
+
+function printarPuntos(puntos, totalPreguntas) {
+    var media = Math.trunc(puntos/totalPreguntas.length*10 );
+    var mensaje;
+    var img;
+    if (puntos == totalPreguntas.length) {
+        mensaje = "Has Acertado todas eres un crack!";
+        img = "<img src='../img/brindis.jpg'>";
+    } else if (puntos == 0){
+        mensaje = "No has dado ni una macho!";
+        img = "<img src='../img/Facepalm.png'>";
+    }
+    else if (media >= 5 && media < 10){
+        mensaje = "Has acertado un buen par, no esta mal pero puedes mejorar";
+        img = "<img src='../img/Tyrion.jpg'>"
+    } else if (media < 5) {
+        mensaje = "Lo has intentado la próxima vez mejor";
+        img = "<img src='../img/crying.png'>"
+    } 
+
+    var contenido = $("<div/>").html("<h3>Tu puntuación es: "+puntos+"</h3>");
+    contenido.append(mensaje);
+    contenido.append(img);
+    $("#dialogo").html(contenido).dialog({
+        title: "Puntuación"
+    });
 };
-
-
-
-
-
 
 
 /*--- Abre y cierra la barra lateral ----*/
@@ -227,9 +278,7 @@ function openSideBar() {
  
 function footerExpandInfo(id, titulo) {
     
-    // var dialogo = $("<div/>").attr("id", "dialog").html(id); 
     $("#dialogo").html(id).attr("tittle","Info Footer").dialog({
         title: titulo
     });    
-    // alert(id);
 }
