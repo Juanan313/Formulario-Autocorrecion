@@ -92,7 +92,7 @@ function cargarPreguntasXML() {
             }
         }
     };
-    xhttp.open("GET", "https://raw.githubusercontent.com/Juanan313/Formulario-Autocorrecion/master/js/triviaWow.xml", true);
+    xhttp.open("GET", "https://raw.githubusercontent.com/Juanan313/Formulario-Autocorrecion/master/formularioXML/triviaWow.xml", true);
     xhttp.send();
 
 
@@ -113,6 +113,9 @@ function prepararPreguntasXML() {
                 break;
             case " Múltiple ":
                 crearCheck(i);
+                break;
+            case " Text ":
+                crearTextArea(i);
                 break;
             default:
                 console.log("default");
@@ -199,7 +202,7 @@ function crearCheck(indice) {
     $("#accordion").append(accordionPregunta);
 }
 
-function crearTextArea(id) {
+function crearTextArea(indice) {
     var pregunta = PREGUNTASXML[indice];
     var texto;
     texto = $(pregunta).find("Enunciado").text();
@@ -208,7 +211,7 @@ function crearTextArea(id) {
     var accordionPregunta = $("<div/>").html("Escriba la posible respuesta que considere")
     var respuestas = "<form id='" + indice + "'>";
     var textoRespuestas = $(pregunta).find("Respuestas");
-    respuestas += "<input type='text' name='pregunta' autocomplete='' class='floatRight' placeholder='Su respuesta'/></label>";
+    respuestas += "<input type='text' name='pregunta' autocomplete='x' class='col-12' placeholder='Su respuesta'/>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
