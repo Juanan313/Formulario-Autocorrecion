@@ -300,4 +300,16 @@
         </Respuestas>
         <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=C</RespuestaCorrecta>
     </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Text </Tipo>
+        <Enunciado> ¿Cómo se llama la última expansión publicada de WoW? </Enunciado>
+        <RespuestaCorrecta>Legion</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Text </Tipo>
+        <Enunciado> ¿En que fecha se publicó WoW? </Enunciado>
+        <RespuestaCorrecta>2004</RespuestaCorrecta>
+    </pregunta>
 </wowTrivial>

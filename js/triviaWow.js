@@ -1,5 +1,6 @@
 // Constante en la que almacenamos los datos y sobre la que trabajaremos
 var PREGUNTASXML;
+var USER;
 
 /* ---- Se carga el evento beforeUnload en el ready para que solo se cargue en la páginas indicadas ---- */
 $( document ).ready(function() {
@@ -57,12 +58,19 @@ window.onload = function () {
     $("#puntuar").on("click", function() {
         puntuar();
     })
+
+    $("#myForm").submit(function(){
+        var cadena = $("#myForm").serialize();
+        alert(cadena);
+        return false;
+        });
+
 };
 
 /* ---- Mensaje al intentar recargar o cerrar la página -----*/
 function cargarBeforeUnload () {
 window.onbeforeunload = function (e) {
-    var confirmationMessage = "Las preguntas respondidas de perderán, ¿estás seguro que quieres dejar la página?";
+    var confirmationMessage = "Las preguntas respondidas se perderán, ¿estás seguro que quieres dejar la página?";
     e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
     return confirmationMessage;
 }
@@ -134,6 +142,11 @@ function prepararPreguntasRandom() {
                 preguntas.push(PREGUNTASXML[numRandom]);
                 contador = preguntas.length;
                 continue;
+            case " Text ":
+                crearTextArea(numRandom);
+                preguntas.push(PREGUNTASXML[numRandom]);
+                contador = preguntas.length;
+                continue;
             default:
                 console.log("default");
         }
@@ -179,6 +192,23 @@ function crearCheck(indice) {
     respuestas += "<label><input type='checkbox' name='pregunta' value='B' > " + textoRespuestas.find("B").text() + "</label><br/>";
     respuestas += "<label><input type='checkbox' name='pregunta' value='C' > " + textoRespuestas.find("C").text() + "</label><br/>";
     respuestas += "<label><input type='checkbox' name='pregunta' value='D' > " + textoRespuestas.find("D").text() + "</label><br/>";
+    respuestas += "</form>";
+    accordionPregunta.append(respuestas);
+
+    $("#accordion").append("<h3>" + texto + "</h3>");
+    $("#accordion").append(accordionPregunta);
+}
+
+function crearTextArea(id) {
+    var pregunta = PREGUNTASXML[indice];
+    var texto;
+    texto = $(pregunta).find("Enunciado").text();
+
+    var enunciado = $("<h3></h3>").append("texto");
+    var accordionPregunta = $("<div/>").html("Escriba la posible respuesta que considere")
+    var respuestas = "<form id='" + indice + "'>";
+    var textoRespuestas = $(pregunta).find("Respuestas");
+    respuestas += "<input type='text' name='pregunta' autocomplete='' class='floatRight' placeholder='Su respuesta'/></label>";
     respuestas += "</form>";
     accordionPregunta.append(respuestas);
 
