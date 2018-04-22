@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT wowTrivial (pregunta+) >
+<!ELEMENT pregunta (Categoría, Tipo, Enunciado, Respuestas* , RespuestaCorrecta) >
+    <!ELEMENT Categoria (#PCDATA) >
+    <!ELEMENT Tipo (#PCDATA) >
+    <!ELEMENT Enunciado (#PCDATA) >
+    <!ELEMENT Respuestas (A?, B?, C?, D?) >
+        <!ELEMENT A (#PCDATA) >
+        <!ELEMENT B (#PCDATA) >
+        <!ELEMENT C (#PCDATA) >
+        <!ELEMENT D (#PCDATA) >
+    <!ELEMENT RespuestaCorrecta (#PCDATA) >
