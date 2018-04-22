@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="triviaWow.xsd">
+<wowTrivial>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Dónde se encuentra el Bastión Violeta? </Enunciado>
+        <Respuestas> 
+                <A> Península de Fuego Infernal </A>
+                <B correcta="True"> Dalaran </B>
+                <C> Tol Barad </C>
+                <D> Ventormenta </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales de estas Mazmorras pertenecen a la expansión Legion? </Enunciado>
+        <Respuestas> 
+                <A  correcta="True"> Cámaras de las Celadoras </A>
+                <B> Cámaras de piedra </B>
+                <C> El templo del dragón de jade </C>
+                <D  correcta="True"> Regreso a Kharazan </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> Estilos de lucha del Maestro de forja Throngus en Grim Batol </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Sin Armas </A>
+                <B correcta="True"> Dobles Espadas </B>
+                <C correcta="True"> Escudo </C>
+                <D> Alabrarda </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales de estas mazmorras pertenecen a la expansión Mist of Pandaria? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Cervecería del Trueno </A>
+                <B> Grim Batol </B>
+                <C correcta="True"> Templo del dragón de Jade </C>
+                <D correcta="True"> Monasterio del Shadopan </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=C&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Mazmorras </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Quién es el último jefe de la banda Ciudadela de la Corona de hielo? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> El rey Exánime </A>
+                <B> Ragnaros </B>
+                <C> Alamuerte </C>
+                <D> Kael'thas </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Qué arma forjó el Veredicto Cinéreo para enfrentarse al Rey Exánime? </Enunciado>
+        <Respuestas> 
+                <A> La Crematoria </A>
+                <B> La Crematoria Corrupta</B>
+                <C> La mano de Tyr </C>
+                <D correcta="True"> La agonía de las Sombras </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Quién forjó la espada Felo'menon? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Kael'thas caminante del sol </A>
+                <B> Tu personaje(Mago) </B>
+                <C> Anestarian caminante del sol </C>
+                <D> Khadgar </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Qué objetos de movilidad te entregaban al principio de la expansión Legión cuando no se podía volar? </Enunciado>
+        <Respuestas> 
+                <A> Piedra de hogar </A>
+                <B correcta="True"> Piedra de hogar de Dalaran </B>
+                <C> Cometa gigante </C>
+                <D correcta="True"> Silbato de Maestro de vuelo  </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Objetos </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cómo se llama el bastón que Khadgar heredó de su antecesor Medivh? </Enunciado>
+        <Respuestas> 
+                <A> Felanor </A>
+                <B> Mano de Tyr </B>
+                <C> Rasgacielos </C>
+                <D correcta="True"> Atiesh  </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Qué especie surgió de la relación entre Zaetar y Theradras? </Enunciado>
+        <Respuestas> 
+               <A> Harpías </A>
+                <B> Troggs</B>
+                <C> Magnatauras </C>
+                <D correcta="True"> Centauros </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Con cuáles de estas especializaciones cuenta la clase Paladin? </Enunciado>
+        <Respuestas> 
+                <A  correcta="True"> Protección </A>
+                <B> Defensor Justo</B>
+                <C> Vengador Sagrado </C>
+                <D  correcta="True"> Represión </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cómo se llamaba la Forma Druídica que dió lugar a la maldición de los huargen? </Enunciado>
+        <Respuestas>
+                <A> Forma de Lobo </A>
+                <B correcta="True"> Forma de la manada</B>
+                <C> Forma de lo salvaje </C>
+                <D> No tiene nada que ver con los Druidas </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales son especializaciones de la clase Druida? </Enunciado>
+        <Respuestas>
+                <A correcta="True"> Feral </A>
+                <B correcta="True"> Oso </B>
+                <C> Pollo salvaje </C>
+                <D correcta="True"> Equilibrio </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Clases </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cúales son especializaciones de la clase Pícaro? </Enunciado>
+        <Respuestas>
+                <A correcta="True"> Forajido </A>
+                <B> Truhán </B>
+                <C> Saqueador </C>
+                <D correcta="True"> Sutileza </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> El difunto hijo de Varok Colmillosaurio se llamaba... </Enunciado>
+        <Respuestas> 
+                <A> Garrosh </A>
+                <B> Thrall </B>
+                <C correcta="True"> Dranosh </C>
+                <D> Valahk </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> Un draenei que antaño fue un robusto paladín cayó enfermo tras luchar con la legión ardiente y ahora es un poderoso Chamán, ¿cómo se llama? </Enunciado>
+        <Respuestas> 
+                <A> Velen </A>
+                <B> Akama </B>
+                <C correcta="True"> Maraad </C>
+                <D> Nobundo </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cuál de estos personajes ayuda a los personajes monje a conseguir Fu Zan, el Compañero del Errante? </Enunciado>
+        <Respuestas> 
+                <A> Velen </A>
+                <B> Tyrion </B>
+                <C> Chen </C>
+                <D correcta="True"> El rey mono </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cual fue el primer titán asesinado por Sargeras? </Enunciado>
+        <Respuestas> 
+                <A> Aman'Thul </A>
+                <B> Norgannon </B>
+                <C correcta="True"> Aggramar </C>
+                <D> Eonar </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cómo se llamaba el emperador Pandaren que escondió Pandaria con una densa niebla para protegerla del resto del mundo? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Emperador Shaohao </A>
+                <B> Emperador Li Yiang </B>
+                <C> Fue obra de los Augusto Celestiales </C>
+                <D> Emperador Thaurissan </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿A quién persiguió Arthas hasta Rasganorte? </Enunciado>
+        <Respuestas> 
+                <A> Illidan </A>
+                <B correcta="True"> Mal'Ganis </B>
+                <C> Ner'Zhul </C>
+                <D> N'Zoth </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
+    </pregunta>
+     <pregunta>
+        <Categoría> Personajes </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cuáles de estos personajes pertenecen a la Alianza? </Enunciado>
+        <Respuestas> 
+                <A> Illidan </A>
+                <B correcta="True"> Cringrís </B>
+                <C correcta="True"> Moira Thaurissan </C>
+                <D> Bairne </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B&#038;pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Quién fué responsable de que Draenor se convirtiera en Terrallende? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Ner'Zhul </A>
+                <B> Gul'Dan </B>
+                <C> Illidan Tempestira </C>
+                <D> Orgrim Martillo Maldito </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> Tras vencer a Arthas en ICC, ¿Quién ocuparía el trono del rey Exánime y su puesto? </Enunciado>
+        <Respuestas> 
+                <A> Lord Tyrion </A>
+                <B> Varian Wrynn </B>
+                <C> Illidan Tempestira </C>
+                <D  correcta="True"> Bolvar Fordragon </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=D</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Selección </Tipo>
+        <Enunciado> ¿Cuál es el título de Tyrande? </Enunciado>
+        <Respuestas> 
+                <A> Sacerdotisa de Elune </A>
+                <B correcta="True"> Suma Sacerdotisa de Elune</B>
+                <C> La mujer de Malfurion </C>
+                <D> Lider de los Elfos de la Noche </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=B</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Múltiple </Tipo>
+        <Enunciado> ¿Cuáles de estos dragones han sido aspectos? </Enunciado>
+        <Respuestas> 
+                <A correcta="True"> Alamuerte </A>
+                <B correcta="True"> Ysera</B>
+                <C correcta="True"> Alexstrasza </C>
+                <D> Onyxia </D>
+        </Respuestas>
+        <RespuestaCorrecta>pregunta=A&#038;pregunta=B&#038;pregunta=C</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Text </Tipo>
+        <Enunciado> ¿Cómo se llama la última expansión publicada de WoW? </Enunciado>
+        <RespuestaCorrecta>Legion</RespuestaCorrecta>
+    </pregunta>
+    <pregunta>
+        <Categoría> Historia </Categoría>
+        <Tipo> Text </Tipo>
+        <Enunciado> ¿En que fecha se publicó WoW? </Enunciado>
+        <RespuestaCorrecta>2004</RespuestaCorrecta>
+    </pregunta>
+</wowTrivial>
